@@ -4,13 +4,26 @@ require 'net/http'
 module CentsaiPosts
   class PostsDownloader
     CENTSAI_POSTS_URI = 'https://centsai.com/api/centsai-api.php'
+    TIME_FORMATE = '%a, %d %b %Y %H:%M:%S +0000'
+
+    COMMON_XML_CONTENT = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+      <channel>
+        <title>centsai</title>
+        <language>en-US</language>
+        <description>centsai</description>
+        <lastBuildDate>Sat, 27 Mar 2021 09:08:45 +0000</lastBuildDate>
+        <updatePeriod>hourly</updatePeriod>
+        <updateFrequency type=\"integer\">1</updateFrequency>
+        <generator>https://wordpress.org/?v=5.6.1</generator>
+        POSTS_TO_BE_REPLACED
+      </channel>"
 
     def initilize
     end
 
-    def call
-      response = http_connection.get()
-      records = parse_posts(JSON.parse(response.body))
+    
+    def rss_field_xml_string
+      COMMON_XML_CONTENT.gsub('POSTS_TO_BE_REPLACED', items_in_xml_formate)
     end
 
     def http_connection
@@ -28,11 +41,11 @@ module CentsaiPosts
       end
 
       def post_hash(post_object)
-        {GUID: post_object["post_id"],
-        Title: post_object["post_title"],
-        content: post_object["post_content"],
-        Dc: post_object["author_name"],
-        Media: {url: post_object["post_image"]}}
+        {guid: post_object["post_id"],
+        title: post_object["post_title"],
+        content: post_object["post_content"].to_json,
+        cc: post_object["author_name"],
+        media: {url: post_object["post_image"]}}
         # {
         #   post_id: post_object["post_id"],
         #   post_template: post_object["post_template"],
@@ -61,5 +74,28 @@ module CentsaiPosts
         #   featured_part_img: post_object["featured_part_img"]
         # }
       end
+
+      def get_posts
+        response = http_connection.get()
+        parse_posts(JSON.parse(response.body))
+      end
+
+      def items_in_xml_formate
+        items_in_xml_string = []
+        get_posts.each do |post|
+          items_in_xml_string << 
+            "<item>
+              <title>#{post[:title]}</title>
+              <pubDate>#{Time.now.utc.strftime(TIME_FORMATE)}</pubDate>
+              <guid>#{post[:guid]}</guid>
+              <content>#{post[:content]}</content>
+              <cc>#{post[:author_name]}</cc>
+              <media><url>#{post[:author_name]}</url></media>
+            </item>"
+        end
+
+        items_in_xml_string.join('\n')
+      end
+
   end
 end
