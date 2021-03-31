@@ -5,10 +5,10 @@ module CentsaiPosts
   class PostsDownloader
     CENTSAI_POSTS_URI = 'https://centsai.com/api/centsai-api.php'
 
-    def initialize(articles, channel_data = {})
-        articles = get_posts
-        @articles = HashWithIndifferentAccess.new(article)
-        @channel_data = channel_data
+    def initialize
+        articles = get_posts["posts"]
+        @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
+        @channel_data = {}
       end
 
     def xml_rss_feed
@@ -118,7 +118,7 @@ module CentsaiPosts
 
       def get_posts
         response = http_connection.get()
-        parse_posts(JSON.parse(response.body))
+        JSON.parse(response.body)
       end
   end
 end
