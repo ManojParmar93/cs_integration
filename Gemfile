@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'faraday'
 gem 'rss'
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2'
 gem 'builder', '~> 3.2', '>= 3.2.2'
 
 group :development, :test do

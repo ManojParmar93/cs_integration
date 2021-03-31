@@ -6,10 +6,10 @@ module CentsaiPosts
     CENTSAI_POSTS_URI = 'https://centsai.com/api/centsai-api.php'
 
     def initialize
-        articles = get_posts["posts"]
-        @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
-        @channel_data = {}
-      end
+      articles = get_posts["posts"]
+      @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
+      @channel_data = {}
+    end
 
     def xml_rss_feed
       return unless @articles.is_a?(Array)
