@@ -4,26 +4,21 @@ require 'net/http'
 module CentsaiPosts
   class PostsDownloader
     CENTSAI_POSTS_URI = 'https://centsai.com/api/centsai-api.php'
-    TIME_FORMATE = '%a, %d %b %Y %H:%M:%S +0000'
 
-    COMMON_XML_CONTENT = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-      <channel>
-        <title>centsai</title>
-        <language>en-US</language>
-        <description>centsai</description>
-        <lastBuildDate>Sat, 27 Mar 2021 09:08:45 +0000</lastBuildDate>
-        <updatePeriod>hourly</updatePeriod>
-        <updateFrequency type=\"integer\">1</updateFrequency>
-        <generator>https://wordpress.org/?v=5.6.1</generator>
-        POSTS_TO_BE_REPLACED
-      </channel>"
+    def initialize(articles, channel_data = {})
+        articles = get_posts
+        @articles = HashWithIndifferentAccess.new(article)
+        @channel_data = channel_data
+      end
 
-    def initilize
-    end
-
-    
-    def rss_field_xml_string
-      COMMON_XML_CONTENT.gsub('POSTS_TO_BE_REPLACED', items_in_xml_formate)
+    def xml_rss_feed
+      return unless @articles.is_a?(Array)
+      make_feed
+    rescue StandardError => error
+      ::Rails.logger.error(
+        "#{self.class.name}##{__method__} - ERROR! #{error}"
+      )
+      nil
     end
 
     def http_connection
@@ -32,75 +27,98 @@ module CentsaiPosts
       conn
     end
 
-    private
-      def parse_posts(records)
-        post_data = records["posts"]
-        post_data.map do |post|
-          post_hash(post)
+    def make_feed
+        xml = Builder::XmlMarkup.new
+        xml.instruct!(:xml, version: '1.0', encoding: 'UTF-8')
+        xml.rss(
+          version: 2.0,
+          'xmlns:content' => 'http://purl.org/rss/1.0/modules/content/',
+          'xmlns:dc' => 'http://purl.org/dc/elements/1.1/',
+          'xmlns:media' => 'http://search.yahoo.com/mrss/'
+        ) do |_|
+          xml.channel do |channel|
+            make_channel(channel)
+          end
         end
       end
 
-      def post_hash(post_object)
-        {
-          guid: post_object["post_id"],
-          title: post_object["post_title"],
-          content: post_object["post_content"].to_json,
-          cc: post_object["author_name"],
-          media:
-                {
-                  url: post_object["post_image"]
-                }
-        }
-        # {
-        #   post_id: post_object["post_id"],
-        #   post_template: post_object["post_template"],
-        #   post_title: post_object["post_title"],
-        #   post_content: post_object["post_content"],
-        #   post_image: post_object["post_image"],
-        #   post_url: post_object["post_url"],
-        #   canonical_url: post_object["canonical_url"],
-        #   post_date: post_object["post_date"],
-        #   six_second_take: post_object["six_second_take"],
-        #   author_id: post_object["author_id"],
-        #   author_name: post_object["author_name"],
-        #   author_url: post_object["author_url"],
-        #   author_image: post_object["author_image"],
-        #   category_id: post_object["category_id"],
-        #   category_name: post_object["category_name"],
-        #   category_link: post_object["category_link"],
-        #   sponsored_content: post_object["sponsored_content"],
-        #   sponsored_image: post_object["sponsored_image"],
-        #   sponsored_url: post_object["sponsored_url"],
-        #   video_url: post_object["video_url"],
-        #   podcast_url: post_object["podcast_url"],
-        #   featured_partner: post_object["featured_partner"],
-        #   featured_partner_url: post_object["featured_partner_url"],
-        #   featured_part_desc: post_object["featured_part_desc"],
-        #   featured_part_img: post_object["featured_part_img"]
-        # }
+    private
+
+      # updated code 31 March
+
+      def make_feed # rubocop:disable MethodLength
+        xml = Builder::XmlMarkup.new
+        xml.instruct!(:xml, version: '1.0', encoding: 'UTF-8')
+        xml.rss(
+          version: 2.0,
+          'xmlns:content' => 'http://purl.org/rss/1.0/modules/content/',
+          'xmlns:dc' => 'http://purl.org/dc/elements/1.1/',
+          'xmlns:media' => 'http://search.yahoo.com/mrss/'
+        ) do |_|
+          xml.channel do |channel|
+            make_channel(channel)
+          end
+        end
+      end
+
+      def make_channel(channel)
+        channel.title @channel_data[:title]
+        channel.link @channel_data[:link]
+        channel.description @channel_data[:description]
+        channel.pubDate DateTime.now.utc.to_formatted_s(:rfc822) rescue ""
+        make_items(channel)
+      end
+
+      def make_items(channel)
+        @articles.each do |article|
+          channel.item do |item|
+            make_item(item, article)
+          end
+        end
+      end
+
+      def make_item(item, article) # rubocop:disable MethodLength, AbcSize
+        item.guid article[:post_id]
+        item.title article[:post_title]
+        item.pubDate Time.zone.parse(
+          article[:published_at].to_s
+        ).to_formatted_s(:rfc822) rescue ""
+        # http://www.lowter.com/blogs/2008/2/9/rss-dccreator-author
+        item.dc(:creator) do |dc|
+          dc.text! article[:author_name]
+        end if article[:author_name].present?
+        item.description article[:post_content]
+        # Note that RSS 2.0 spec
+        # does not validate with HTTPS.
+        # These URLs are HTTPS from
+        # the Dow Jones API.
+        # https://github.com/rubys/feedvalidator/issues/16
+        # This is why enclosure was not used.
+        # FeedJira will pick this up.
+        item.media(
+          :content,
+          url: article[:post_url],
+          fileSize: article[:image_size],
+          type: article[:image_type]
+        ) do |media_content|
+          media_content.media(
+            :credit,
+            role: 'photographer',
+            scheme: 'urn:ebu'
+          ) do |media_credit|
+            media_credit.text! article[:image_credit]
+          end if article[:image_credit].present?
+        end if article[:image_url].present?
+        # https://developer.mozilla.org/en-US/docs/Web/RSS/
+        # Article/Why_RSS_Content_Module_is_Popular_-_Including_HTML_Contents
+        item.content(:encoded) do |content|
+          content.cdata!(article[:post_content])
+        end
       end
 
       def get_posts
         response = http_connection.get()
         parse_posts(JSON.parse(response.body))
       end
-
-      def items_in_xml_formate
-        items_in_xml_string = []
-        get_posts.each do |post|
-          items_in_xml_string << 
-            "<item>
-              <title>#{post[:title]}</title>
-              <pubDate>#{Time.now.utc.strftime(TIME_FORMATE)}</pubDate>
-              <guid>#{post[:guid]}</guid>
-              <content>#{post[:content]}</content>
-              <cc>#{post[:author_name]}</cc>
-              <media><url>#{post[:author_name]}</url></media>
-            </item>"
-        end
-
-        items_in_xml_string.join('\n')
-      end
-
   end
 end
