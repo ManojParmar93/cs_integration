@@ -10,9 +10,14 @@ module CentsaiPosts
       File.open(file_location, 'a+') {|f| f.write(file_content) }
 
       bucket = S3_BUCKET.objects[file_name]
+
       bucket.write(
-        file: file_location
+        file: file_location,
+        acl: :public_read
       )
+
+      puts "https://centsai-posts-new.s3.ap-south-1.amazonaws.com/#{file_name}"
+      File.delete(file_location)
     end
   end
 end
