@@ -41,11 +41,16 @@ module CentsaiPosts
       end
 
       def post_hash(post_object)
-        {guid: post_object["post_id"],
-        title: post_object["post_title"],
-        content: post_object["post_content"].to_json,
-        cc: post_object["author_name"],
-        media: {url: post_object["post_image"]}}
+        {
+          guid: post_object["post_id"],
+          title: post_object["post_title"],
+          content: post_object["post_content"].to_json,
+          cc: post_object["author_name"],
+          media:
+                {
+                  url: post_object["post_image"]
+                }
+        }
         # {
         #   post_id: post_object["post_id"],
         #   post_template: post_object["post_template"],
