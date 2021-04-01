@@ -6,7 +6,6 @@ module FmexDirect
     FMEX_DIRECT_POSTS_URI = "https://app.fmexdirect.com/api/v1/content?accessKey=FMEX-TEST-KEY&content_id=2037"
 
     def initialize
-      binding.pry
       articles = get_posts['content_section']['section_categories']
       @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
       @channel_data = {}
