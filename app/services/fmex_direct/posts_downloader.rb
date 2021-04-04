@@ -94,7 +94,7 @@ module FmexDirect
         item.dc(:creator) do |dc|
           dc.text! @author_details['author_name']
         end if @publisher_details.present?
-        item.description ActionView::Base.full_sanitizer.sanitize(article[:category_description])
+        item.description article[:category_description]
         # Note that RSS 2.0 spec
         # does not validate with HTTPS.
         # These URLs are HTTPS from
