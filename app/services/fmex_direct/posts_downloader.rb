@@ -5,6 +5,7 @@ module FmexDirect
   class PostsDownloader
     FMEX_DIRECT_POSTS_URI = "https://app.fmexdirect.com/api/v1/content?accessKey=FMEX-TEST-KEY&content_id=2037"
     VALID_FILE_NAME_CHARACTERS = %w[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z]
+    attr_reader :articles, :author_details, :channel_data, :file_name, :published_at
 
     def initialize
       post_response = get_posts
@@ -40,26 +41,9 @@ module FmexDirect
       Faraday.new(url: FMEX_DIRECT_POSTS_URI)
     end
 
-    def make_feed
-        xml = Builder::XmlMarkup.new
-        xml.instruct!(:xml, version: '1.0', encoding: 'UTF-8')
-        xml.rss(
-          version: 2.0,
-          'xmlns:content' => 'http://purl.org/rss/1.0/modules/content/',
-          'xmlns:dc' => 'http://purl.org/dc/elements/1.1/',
-          'xmlns:media' => 'http://search.yahoo.com/mrss/'
-        ) do |_|
-          xml.channel do |channel|
-            make_channel(channel)
-          end
-        end
-      end
-
     private
 
-      # updated code 31 March
-
-      def make_feed # rubocop:disable MethodLength
+      def make_feed
         xml = Builder::XmlMarkup.new
         xml.instruct!(:xml, version: '1.0', encoding: 'UTF-8')
         xml.rss(

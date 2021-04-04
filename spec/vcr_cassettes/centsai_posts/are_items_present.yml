@@ -1,0 +1,449 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://centsai.com/api/centsai-api.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Basic YXBpdXNlckB2ZXN0b3JseS5jb206VmVzdG9ybHlAQ2VudFNhaUFQSSE=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Wed, 14 Apr 2021 09:06:28 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - ''
+      access-control-allow-methods:
+      - GET,POST
+      access-control-allow-credentials:
+      - 'true'
+      access-control-max-age:
+      - '86400'
+      access-control-allow-headers:
+      - Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+      x-xss-protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"posts":[{"post_id":80472,"post_template":"infographics","post_title":"[INFOGRAPHIC]
+        How Do You Plan to Fund Your Retirement?","post_content":"<!DOCTYPE html PUBLIC
+        \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p><img loading=\"lazy\" class=\"aligncenter
+        wp-image-80478 size-full\" src=\"https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Retirement_Sources_of_income_Infographic_A.2.png\"
+        alt=\"Retirement Sources of income Infographic A.1 | retirement statistics\"
+        width=\"767\" height=\"1200\" srcset=\"https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Retirement_Sources_of_income_Infographic_A.2.png
+        767w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Retirement_Sources_of_income_Infographic_A.2.png
+        370w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Retirement_Sources_of_income_Infographic_A.2.png
+        355w\" sizes=\"(max-width: 767px) 100vw, 767px\"><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/infographic\/retirement-statistics-planning-infographic\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":80426,"post_template":"sheventure_podcast","post_title":"Listen:
+        From Banker to FinLit Game(r) With Ashley Clark","post_content":"<!DOCTYPE
+        html PUBLIC \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p style=\"text-align: center;\"><img loading=\"lazy\"
+        class=\"alignnone size-full wp-image-1313\" src=\"https:\/\/sheventures.centsai.com\/wp-content\/uploads\/2021\/04\/IMG_8987PNG.jpg\"
+        alt=\"financial literacy games ashley clark\" width=\"443\" height=\"248\"><\/p>\n<p><iframe
+        loading=\"lazy\" style=\"border: none;\" src=\"\/\/html5-player.libsyn.com\/embed\/episode\/id\/18366377\/height\/90\/theme\/custom\/thumbnail\/yes\/direction\/backward\/render-playlist\/no\/custom-color\/39008a\/\"
+        width=\"100%\" height=\"90\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\"><\/iframe><\/p>\n<p><span
+        style=\"font-weight: 400;\">Sometimes, the best business ideas are right in
+        front of you. That was the case for Ashley Clark, who pivoted from being a
+        banker to an entrepreneur and creator of old-school board games and flashcards
+        that teach financial literacy &mdash; going against the current trend of online
+        gaming with six-figure success during a pandemic.<\/span><\/p>\n<p><span style=\"font-weight:
+        400;\">A decade as a banker underscored that too many people didn&rsquo;t
+        understand their own finances. Clark began to write down common customer questions
+        &mdash; using this as her initial &ldquo;market research.&rdquo; Next was
+        her tough focus group: her children. Her passion for teaching people about
+        money flourished, and today Clark is CEO and founder of <\/span>Sense 2 Cents<span
+        style=\"font-weight: 400;\">, a financial literacy&ndash;based games company.<\/span><\/p>\n<p><span
+        style=\"font-weight: 400;\">Sense 2 Cents aims to take the chore out of learning
+        and foster a solid financial foundation by making the flashcards and board
+        games a family activity, in which parents can learn alongside their children.
+        Clark has also developed active communities on Instagram and Facebook.<\/span><\/p>\n<p><span
+        style=\"font-weight: 400;\">But it wasn&rsquo;t all smooth sailing: Three
+        months into starting this venture, Clark was diagnosed with multiple sclerosis
+        and, being so ill, she understandably wanted to quit. Advice from her entrepreneurial
+        mom helped her stay focused, and now she has tips for those starting their
+        own business.<\/span><\/p>\n<p><span style=\"font-weight: 400;\">On this episode
+        of SheVentures, discover why financial literacy is so important in establishing
+        generational wealth in under-served communities, what financial institutions
+        can do to help, and Clark&rsquo;s top tips for success.&nbsp;<\/span><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/podcast\/sheventures-episode-77-ashley-clark\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":80435,"post_template":"column","post_title":"\u201cAccidental\u201d
+        Pandemic-Related Financial Planning Opportunities","post_content":"<!DOCTYPE
+        html PUBLIC \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p><span style=\"font-weight: 400;\">Financial
+        planning is often pictured in graphic images as an upwardly sloping straight-line
+        path that moves seamlessly from Point A to Point B. People set financial goals,
+        develop a plan, &ldquo;work the plan&rdquo; by taking action to reach their
+        goals, and review and revise the plan every so often or when major lifestyle
+        changes occur.&nbsp;<\/span><\/p>\n<p><span style=\"font-weight: 400;\">Though
+        this approach can sometimes work well in normal times, the past year has been
+        anything but normal as a result of COVID-19.<\/span><\/p>\n<p><span style=\"font-weight:
+        400;\">Many personal financial plans (e.g., jobs, education, moving, travel,
+        retirement dates) &ldquo;blew up&rdquo; amid layoffs, lockdowns, deaths of
+        loved ones, and lives fraught with uncertainty. In addition, legislation and
+        the law of supply and demand (i.e., the current U.S. housing market) presented
+        opportunities that nobody could have foreseen, much less planned for.&nbsp;<\/span><\/p>\n<p><span
+        style=\"font-weight: 400;\">A better graphic image for the financial planning
+        process for many people, especially during the past year, is a tangled ball
+        of yarn.<\/span><\/p>\n<p><span style=\"font-weight: 400;\">Five examples
+        are presented, below, of &ldquo;accidental&rdquo; financial planning opportunities
+        that were not on most people&rsquo;s radar screens until recently. They could
+        not have been included in personal financial plans previously because they
+        were not feasible, not applicable, or did not exist under previous tax laws.&nbsp;<\/span><\/p>\n<p><span
+        style=\"font-weight: 400;\">All of these strategies have arisen in some way,
+        shape, or form as a result of the pandemic and may be useful to consider during
+        the months ahead:<\/span><\/p>\n<h2><b>Deploy Tax Savings From Unemployment
+        Tax Leniency<\/b><\/h2>\n<p><span style=\"font-weight: 400;\">Under the <\/span>American
+        Rescue Plan Act (ARPA)<span style=\"font-weight: 400;\">, signed into law
+        on March 12, many taxpayers are exempt from income tax on up to $10,200 of
+        unemployment benefits that were received during 2020.&nbsp;<\/span><\/p>\n<p><span
+        style=\"font-weight: 400;\">Normally, this money would be fully taxable as
+        ordinary income (i.e., at a taxpayer&rsquo;s regular marginal tax rate, like
+        wages, salaries, and tips) on federal tax returns. This tax break was a last-minute
+        addition to the ARPA that few people saw coming and came a month into the
+        2020 tax filing season.<\/span><span style=\"font-weight: 400;\">&nbsp;<\/span><\/p>\n<blockquote><p><strong>Most
+        people probably had taxes withheld on their unemployment benefits or sent
+        the IRS quarterly estimated payments in expectation of a future tax liability.&nbsp;<\/strong><\/p><\/blockquote>\n<p><span
+        style=\"font-weight: 400;\">As a result of the ARPA tax law change, those
+        individuals could now save $1,000 or more on their income taxes (depending
+        on their tax rate and other income sources), resulting in a larger refund
+        or a smaller tax bill.&nbsp;<\/span><\/p>\n<p><span style=\"font-weight: 400;\">For
+        example, $9,000 in unemployment benefits in the 12 percent tax bracket = $1,080
+        (9,000 x .12). This is a nice chunk of change to save or repay debt with.<\/span><\/p>\n<h2><b>Take
+        Tax Credits Available as a Result of Reduced Income<\/b><\/h2>\n<p><span style=\"font-weight:
+        400;\">Some taxpayers may qualify for income tax breaks in 2020 for which
+        they previously earned too much income.&nbsp;<\/span><\/p>\n<p><span style=\"font-weight:
+        400;\">One example is the Earned Income Tax Credit (<\/span>EITC<span style=\"font-weight:
+        400;\">), which maxes out at $15,280 ($21,710) of adjusted gross income (AGI)
+        for a single taxpayer and married couple filing jointly with no children and
+        $41,756 ($47, 646), $47, 440 ($53,330), and $50,594 ($56,844) with one, two,
+        and three or more children, respectively.<\/span><\/p>\n<p><span style=\"font-weight:
+        400;\">The maximum credit amounts on 2020 tax returns for zero, one, two,
+        and three or more children are respectively $538, $3,584, $5,920, and $6,660.
+        A tax credit is a dollar for dollar reduction in tax liability (e.g., $6,000
+        tentative tax bill minus $3,584 EITC = $2,416 final tax bill).&nbsp;<\/span><\/p>\n<p><span
+        style=\"font-weight: 400;\">For the first time ever, perhaps, taxpayers who
+        always earned more than the maximum AGI for the EITC may qualify if they lost
+        income as a result of the pandemic. The tax savings could provide funds for
+        an emergency fund or debt repayment.<\/span><\/p>\n<h2><b>Use a Big House
+        Profit to Pay Off Accumulated Debt<\/b><\/h2>\n<p><span style=\"font-weight:
+        400;\">Some homeowners who lost income and got behind on mortgage payments
+        are cashing out during the current &ldquo;red hot&rdquo; housing market.&nbsp;<\/span><\/p>\n<p><span
+        style=\"font-weight: 400;\">In one case that I know of, a home seller who
+        owes over $18,000 in arrearages on a federally backed FHA mortgage and has
+        no money with which to repay it when the foreclosure moratorium expires on
+        June 30 will make about a $60,000 profit as a result of selling the house
+        in a bidding war.&nbsp;<\/span><\/p>\n<p><span style=\"font-weight: 400;\">After
+        paying back the mortgage arrearage and home selling expenses, the seller will
+        walk away with about $20,000 after less than two years of homeownership and
+        will &ldquo;punt back&rdquo; to apartment living until household finances
+        stabilize.<\/span><\/p>\n<h2><b>Use a Big House Profit and Downsizing to Build
+        a Retirement Nest Egg<\/b><\/h2>\n<p><span style=\"font-weight: 400;\">Similarly,
+        people who planned to move and downsize anyway and lack sufficient retirement
+        savings can benefit from selling their home in the current sellers&rsquo;
+        market and moving to something smaller.&nbsp;<\/span><\/p>\n<p><span style=\"font-weight:
+        400;\">They essentially become cash buyers who are better able to compete
+        for new housing in the area where they live or elsewhere. In addition, the
+        spread between their old home&rsquo;s price and the cost of a new one provides
+        income for future living expenses.&nbsp;<\/span><\/p>\n<p><span style=\"font-weight:
+        400;\">For example, $300,000 of home sale profit placed in a balanced mutual
+        fund with a 6 percent average return will throw off about $18,000 of annual
+        income.<\/span><b>&nbsp;<\/b><\/p>\n<h2><b>Increase Savings and Philanthropy<\/b><\/h2>\n<p><span
+        style=\"font-weight: 400;\">Some Americans have experienced financial silver
+        linings that they could have not anticipated as a result of COVID-19: increased
+        income due to demand for their industry sector or work skills and\/or reduced
+        expenses such as commuting costs, child care, and other expenses.&nbsp;<\/span><\/p>\n<blockquote><p><strong>Like
+        home sale profit and income tax breaks, increased cash flow provides an opportunity
+        for increased savings, debt reduction, or both.<\/strong><\/p><\/blockquote>\n<p><span
+        style=\"font-weight: 400;\">There are also new opportunities for philanthropy.
+        On 2020 tax returns, married couples filing jointly or singles who do not
+        itemize can deduct $300 in cash contributions to qualified charities.&nbsp;<\/span><\/p>\n<p><span
+        style=\"font-weight: 400;\">In 2021, the tax write-off for couples increases
+        to $600. In addition, the 60 percent of AGI cap on donations made by itemizing
+        taxpayers is suspended in 2021 to encourage philanthropy for coronavirus relief.<\/span><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/must-reads\/money-talk\/pandemic-financial-planning-opportunities\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":66548,"post_template":"default","post_title":"Are
+        Tiny Homes Good Investments? The Answer May Surprise You","post_content":"<!DOCTYPE
+        html PUBLIC \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p>Tiny homes.<\/p>\n<p>Just saying the name
+        brings to mind images of adorable rolling cottages, cutting-edge lifestyles,
+        and minimal possessions and worries.<\/p>\n<p><img loading=\"lazy\" class=\"alignleft
+        size-medium wp-image-66637\" src=\"https:\/\/centsai.com\/wp-content\/uploads\/2019\/10\/Are-Tiny-Homes-Good-Investments-The-Answer-May-Surprise-You.png\"
+        alt=\" They''re all the rage right now &mdash; they may even help you save
+        money &mdash; but are tiny homes actually good investments? Get the lowdown.
+        #property #tips #investing #goodinvestments\" width=\"290\" height=\"579\"
+        srcset=\"https:\/\/centsai.com\/wp-content\/uploads\/2019\/10\/Are-Tiny-Homes-Good-Investments-The-Answer-May-Surprise-You.png
+        290w, https:\/\/centsai.com\/wp-content\/uploads\/2019\/10\/Are-Tiny-Homes-Good-Investments-The-Answer-May-Surprise-You.png
+        278w, https:\/\/centsai.com\/wp-content\/uploads\/2019\/10\/Are-Tiny-Homes-Good-Investments-The-Answer-May-Surprise-You.png
+        564w\" sizes=\"(max-width: 290px) 100vw, 290px\"><\/p>\n<p>We&rsquo;ve all
+        seen the TV shows, listened to the podcasts, and fantasized a bit about living
+        in a home in the forest or on a plot of land near a creek.<\/p>\n<p>For those
+        saddled with debt, the idea of a tiny home that costs less than $20,000 sounds
+        like a great idea. Buying a standard house means spending money on a down
+        payment, insurance, interest, and taxes, not to mention maintenance over time.<\/p>\n<p>The
+        down payment alone is an extreme obstacle to 62 percent of millennials who
+        would not be able to afford a home, according to a survey by Apartment List,
+        while an additional 29 percent claim that the monthly payments would be a
+        severe financial burden.<\/p>\n<p>This begs the question: Given their low
+        cost, are tiny homes good investments?<\/p>\n<p>How much does living the &ldquo;tiny
+        life&rdquo; actually cost, and what kind of resale value can you expect from
+        owning a tiny house?<\/p>\n<p><\/p>\n<h2><strong>What Are Tiny Homes?<\/strong><\/h2>\n<p>In
+        a few words, the tiny home movement is an effort to combat the prevalence
+        of McMansions. It&rsquo;s about reducing the size of the space you live in,
+        meaning that many tiny homes are under 500 square feet. They can be made from
+        vans, miniature constructions, or even from storage containers that real estate
+        entrepreneurs like Janelle Briggs provide.<\/p>\n<p>In the United States,
+        there are more than 10,000 tiny homes, according to Go Downsize, and the trend
+        seems to be rising.<\/p>\n<p>Tiny-home dwellers may downsize for a variety
+        of reasons &mdash; environmental concerns, financial difficulties, or simply
+        for flexibility and freedom. Many tiny homes are mobile, so you can take them
+        wherever you want.<\/p>\n<h2><strong>What Kind of Investment Is a Tiny Home?<\/strong><\/h2>\n<p>One
+        of the things people love most about tiny homes is their endless customizability,
+        which also makes it difficult to answer the question of how much tiny homes
+        cost.<\/p>\n<p>Given that they are easily personalized, this makes it difficult
+        to find an average price for tiny homes, as size, materials, and finishes
+        can vary greatly. The figure runs from about $8,000 for a DIY tiny home with
+        minimal fixtures all the way up to $150,000 and beyond for a custom-built
+        tiny home with luxe fittings and features, according to Home Advisor.<\/p>\n<p>The
+        biggest factors in pricing out a tiny home are materials and labor costs.
+        Anyone who&rsquo;s worked with a contractor can tell you that those items
+        aren&rsquo;t cheap.<\/p>\n<p>If you&rsquo;re willing to do a large portion
+        of the work yourself, you can significantly lower the cost of your home. When
+        looking at a tiny home as an investment, you have to put a dollar value on
+        your own labor. This tells you the real cost, in both money and time spent,
+        of building one.<\/p>\n<p>Materials are the next largest pricing factor.<\/p>\n<blockquote><p><strong><em>If
+        you&rsquo;re savvy and willing to spend some time researching, you can often
+        find reclaimed materials or leftovers from a job site.<\/em><\/strong><\/p><\/blockquote>\n<p>There
+        are entire stores that sell nothing but the extra parts and slightly damaged
+        fixtures from major building companies. These stores are often local businesses,
+        so a quick Google search should bring up the appropriate place to go depending
+        on your location.<\/p>\n<p>Tiny living can be either inexpensive or about
+        the cost of a small starter home. Try finding a $100,000 home with truly top-of-the-line
+        fittings.<\/p>\n<p><span class=\"aff-cta\"><label>Estimate Your Monthly Mortgage
+        Payment With Taxes, Fees, and Insurance<\/label> Calculate Your Payments Here<\/span><\/p>\n<h2><strong>The
+        Cost of Living in a Tiny Home<\/strong><\/h2>\n<p>Living in a tiny home can
+        be incredibly affordable. Heating, cooling, and cleaning 300 square feet is
+        a whole lot cheaper and easier than doing so for a 2,322-square-foot home
+        (the median new home size in 2019, according to the U.S. Census Bureau).<\/p>\n<blockquote><p><strong><em>You
+        can reduce your water, power, and other bills even further if you choose to
+        live a sustainability focused lifestyle.<\/em><\/strong><\/p><\/blockquote>\n<p>Solar
+        panels, well water, and options such as a wood stove for heating can drop
+        your living expenses substantially and shrink your carbon footprint.<\/p>\n<p>There
+        are other expenses to consider, though, especially if you&rsquo;re living
+        in a tiny house on wheels and plan to travel. Gas, insurance, and campground
+        fees can add up fast.<\/p>\n<h3><strong>Finding a Place to Live<\/strong><\/h3>\n<p>One
+        thing that you have to take into account when considering the cost and value
+        of tiny living is where you live. Most American cities aren&rsquo;t tiny-home
+        friendly. Many zoning laws prohibit full-time tiny-home habitation across
+        the board.<\/p>\n<p>Even if you plan to stay in one place, you have to find
+        land that allows tiny homes and has the necessary improvements with water,
+        sewage, and electrical hookups. Many tiny-home dwellers get around this by
+        living on family land or going out into a more rural area.<\/p>\n<p>If you&rsquo;re
+        more sustainably minded, a tiny home is one of the best ways to explore alternative
+        lifestyles. This allows you to disconnect from traditional ways of Western
+        life and see what living off the grid can be like.<\/p>\n<h2><strong>The Resale
+        Market<\/strong><\/h2>\n<p>If you just go by all the reality shows and hype
+        you&rsquo;d think the tiny home market was absolutely booming. The reality
+        is, well, a <em>tiny<\/em> bit different.<\/p>\n<p>Tiny homes are popular,
+        in a big way. But that doesn&rsquo;t mean that everyone, or even most people,
+        are willing to live in one.<\/p>\n<p>Ask any real estate agent about home
+        renovations, and they&rsquo;ll advise you to go for broader appeal. Look for
+        the improvements that match the largest portion of the market&rsquo;s taste
+        and try not to over customize.<\/p>\n<p><\/p>\n<p>About 56 percent of Americans
+        would consider living in a tiny home, according to a survey by IPX 1031, a
+        Fidelity National financial company. Anything that has such a limited market
+        &mdash; or liquidity &mdash; is going to be harder to sell.<\/p>\n<h2><strong>Taking
+        Out a Loan<\/strong><\/h2>\n<p>The biggest selling point for tiny homes is
+        that you don&rsquo;t need to take out a mortgage, according to Hannah Maman,
+        a real estate agent in Phoenix.<\/p>\n<p>You won&rsquo;t find a traditional
+        home loan for a tiny house because most mortgage lenders have minimum loan
+        amounts that are much higher than the one needed for a tiny house.<\/p>\n<p>Additionally,
+        typical mortgage lenders won&rsquo;t give out a loan because many tiny houses
+        are on wheels\/transportable and not on a foundation, and most lenders require
+        a permanent foundation.<\/p>\n<p>That said, Maman explains that you can finance
+        directly through a builder or take out either a personal loan or an RV loan.
+        If you are to take out an RV loan for a tiny house, it must first be certified
+        under the Recreational Vehicle Industry Association (to show it&rsquo;s safe
+        for the road). You can expect to get about 4 to 9 percent interest rates here
+        on a term of 70 to 85 months.<\/p>\n<p>However, if you aren&rsquo;t association
+        certified and would rather take out a personal loan, this is doable. It would
+        just be an unsecured personal loan with a higher interest rate, in the 7 to
+        11 percent range.<\/p>\n<p>&ldquo;So many individuals are struggling with
+        debt and are looking for viable alternatives to being locked into a 30-year
+        mortgage,&rdquo; Maman says.<\/p>\n<blockquote><p><strong><em>&ldquo;Even
+        maintenance and utility bills are cut in half, which saves people a ton of
+        money.&rdquo;<\/em><\/strong><\/p><\/blockquote>\n<p>On the other hand, Maman
+        states, &ldquo;I think people need to be aware that buying a tiny home, in
+        most cases, isn&rsquo;t the same as buying a traditional home.&rdquo; Continue
+        reading below to find out why this kind of investment may not be for you.<\/p>\n<p><span
+        class=\"aff-cta\"><label>Estimate Your Monthly Mortgage Payment With Taxes,
+        Fees, and Insurance<\/label> Calculate Your Payments Here<\/span><\/p>\n<h2><strong>Do
+        Tiny Homes Appreciate in Value?<\/strong><\/h2>\n<p>Best answer: It&rsquo;s
+        complicated. Traditional wisdom tells us owning a house over a long period
+        of time &mdash; say at least five years &mdash; can be a good way to grow
+        your money. After all, don&rsquo;t homes grow in value over time?<\/p>\n<p>Not
+        always.<\/p>\n<p>The land that your home sits on may appreciate in value,
+        but the physical house is actually depreciating. The same thing holds true
+        for tiny homes, with the added twist that you don&rsquo;t usually own any
+        land under them.<\/p>\n<p>Don&rsquo;t expect your tiny home to appreciate
+        in value like a traditional home, advises Noaz Miller, a home-insurance specialist
+        in Scottsdale, Arizona. Location is the key factor that predicts valuation,
+        he adds.<\/p>\n<p>&ldquo;Land typically appreciates or depreciates with the
+        local market,&rdquo; Miller says. Any traditional home with a permanent foundation
+        will have better resale value than a tiny home on wheels, which will depreciate
+        in value like an RV.<\/p>\n<h2><strong>Tiny Homes as Passive Income Investments<\/strong><\/h2>\n<p>If
+        you&rsquo;re renting out a tiny home, it could be a source of passive income,
+        as is any other rental property. But be aware that there are a host of considerations
+        to consider before becoming a landlord, such as state and local laws.<\/p>\n<p>A
+        landlord should use a legally reviewed template for their state when creating
+        a lease. States vary in terms of their protections for tenants and landlords,
+        so ensure you protect yourself as much as possible in the event that any tenant
+        falls far enough behind on rent that legal intervention is needed.<\/p>\n<p>One
+        should also take into careful consideration the financial aspects of maintaining
+        the property. Last, be sure to screen your tenants. As problems arise, you
+        will likely be the one responsible for fixing them.<\/p>\n<p><\/p>\n<h2><strong>The
+        Downsides of Tiny Homes<\/strong><\/h2>\n<p>If you&rsquo;re interested in
+        living in a tiny home, take care to consider the effects that the size of
+        tiny homes can have on your life. Sure, it would be awesome to travel the
+        world in a tiny home on wheels, but the little rational voice might start
+        screaming, &ldquo;No! You don&rsquo;t have a remote job, so you can&rsquo;t
+        just pick up and go.&rdquo;<\/p>\n<p>You also may need more than 500 square
+        feet of space. If you ever intend to host friends and have family stay with
+        you, you need more than one bedroom and bathroom.<\/p>\n<p>Not to mention
+        the difficult regulations that you would have to abide by if you built your
+        own tiny home. Most tiny homes have wheels to avoid the zoning laws in the
+        city, leaving owners scrambling to find a place to park it legally. Some might
+        be able to put it in the backyard of a regular home, but the area must have
+        the proper zoning to accommodate full-time camping.<\/p>\n<p>If the tiny house
+        has a foundation and isn&rsquo;t on wheels, it would have to comply with building
+        codes, which usually means it must be a minimum of 700 square feet. For that
+        reason, many people turn to rural areas where land is less expensive to build
+        and park their tiny homes.<\/p>\n<p>But if you&rsquo;re a city person, it
+        may not be practical for you to live out in the woods.<\/p>\n<h2><strong>The
+        Bottom Line<\/strong><\/h2>\n<p>A tiny home can be a great investment for
+        the right person. If you want to build your own house, travel the country
+        with it, and embrace an alternative lifestyle, a tiny home can be an affordable
+        way to accomplish this.<\/p>\n<p>You can customize the home almost endlessly
+        and save money on rent and utilities. It also allows you to take the comforts
+        of home to all kinds of wild and beautiful places.<\/p>\n<p>If you want to
+        go tiny with an eye toward reselling your home down the line and realizing
+        gains, you may be disappointed. Tiny homes depreciate and can be difficult
+        to sell, so they might not make good investments in that sense. And if you
+        want to live in a major city, it can be difficult and expensive to find somewhere
+        to do so.<\/p>\n<p><span class=\"aff-cta\"><label>Get a Free Quote for a Home
+        Improvement Loan in Minutes<\/label> Visit Site<\/span><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/life\/real-estate\/are-tiny-homes-good-investments\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":4216,"post_template":"default","post_title":"Soylent
+        Diet: The Ups and Downs","post_content":"<!DOCTYPE html PUBLIC \"-\/\/W3C\/\/DTD
+        HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p>Instead of trying to save money on groceries,
+        I decided to do away with them altogether. Am I joking? Technically, no. I
+        <em>did<\/em> stop eating and stop buying groceries. How? The Soylent diet.<\/p>\n<p>Soylent
+        is a meal replacement beverage. It was created by a computer scientist, not
+        a chef, and it&rsquo;s engineered to give your body everything you need to
+        function well. This means somebody can live entirely off this drink alone,
+        and &mdash; in theory &mdash; should still lead a perfectly normal life.<\/p>\n<p>Changing
+        your lifestyle to this extent isn&rsquo;t as abnormal as you may think. In
+        the United States, the meal replacement market is worth a shocking $4.1 billion,
+        according to IBISWorld.<\/p>\n<p><\/p>\n<h2><strong>Time Is Money<\/strong><\/h2>\n<p>The
+        Soylent diet caught my attention for many reasons. The first actually wasn&rsquo;t
+        about money &mdash; it was about time.<\/p>\n<p>You may think I&rsquo;m being
+        stingy with my time, but I&rsquo;m young. Think of all the time I would save
+        by not having to cook. That would effectively add months to my life! I also
+        wouldn&rsquo;t have to grocery shop very often (never, really). Soylent can
+        be delivered to my door.<\/p>\n<p>The second reason I found it so appealing
+        was for health reasons. Stay with me, because I&rsquo;m about to get pretty
+        holistic about life.<\/p>\n<blockquote><p><strong><em>I love automation. Automation
+        means you can set something good in motion and have it run without you.<\/em><\/strong><\/p><\/blockquote>\n<p>This
+        means you can do awesome things without constant motivation. Think automatic
+        bill pay or 401(k) contributions.<\/p>\n<p>Without Soylent, I&rsquo;m constantly
+        having to make healthy eating decisions. I eat at least three meals per day.
+        That means I&rsquo;m having to consciously make healthy choices three-plus
+        times per day, so I sometimes don&rsquo;t eat as healthy as I should. With
+        Soylent, I can be healthy without having to worry about the ingredients.<\/p>\n<p>Of
+        course, I wouldn&rsquo;t replace <em>all<\/em> my meals with Soylent. But
+        many of my boring meals would get replaced.<\/p>\n<h2><strong>Vacation Meals
+        on a Budget<\/strong><\/h2>\n<p>The final reason Soylent caught my eye is
+        the cost. Prices vary based on the amount and whether it&rsquo;s in bottled
+        or powder form for you to mix, but it&rsquo;s around $3 per bottle, or $3
+        per meal.<\/p>\n<p>Though that&rsquo;s more expensive than most home-cooked
+        meals, it saves a lot of money when traveling or just being out and about.
+        Instead of needing to buy a meal, you can just pull a bottle out of your backpack
+        or purse, and crack it open.<\/p>\n<p><span class=\"aff-cta\"><label>Save
+        Time and Eat Better With Personalized Recipes and Grocery Lists <\/label>
+        Visit Site<\/span><\/p>\n<div class=\"chck-lst-box small-box\">\r\n\t\t\t<div
+        class=\"chck-lst-head\"><span>Food Hacks That Save Our Readers Time and Money<\/span><\/div>\r\n            <div
+        class=\"chck-lst-body\"><ul><li><strong>Chris<\/strong>: &ldquo;Purple Carrot
+        delivers a box with three vegan meals to prepare a week. The best part is
+        that it comes with a little cookbook each time. I just buy the ingredients
+        later on if I want to make a recipe again. It got me out of a rut of making
+        me the same stuff&hellip;&rdquo;<\/li>\n<li><strong>Stuart<\/strong>: &ldquo;I
+        make my own chicken broth from store-bought rotisserie chickens. I hate using
+        fresh onion, carrot or celery just for broth. I developed the habit of taking
+        scraps of the three when I cook and storing them in a container in the freezer.
+        When I need to make broth, I just dump it into my instant pot with my chicken.
+        Saves time and money.&rdquo;<\/li>\n<li><strong>Teresa:<\/strong> &ldquo;Pay
+        attention to how often your favorite products go on sale and stock up on enough
+        to last you until the next cycle. There is a fairly predictable sales cycle.&rdquo;<\/li>\n<li><strong>Patrick:<\/strong>
+        &ldquo;Instant Pot. Two magic words.&rdquo;<\/li>\n<li><strong>Tonia:<\/strong>
+        &ldquo;If you have the space, get a big box or upright extra freezer. Make
+        massive batches of dishes like taco meat, slow-cooked pork, pot roast, Indian
+        curry, rice dishes of any kind, etc. Batch them into containers so there&rsquo;s
+        no cooking during the week. We do this and order in once a week. We keep fresh
+        broccoli, string beans and cauliflower in large Tupperware containers pre-cut
+        and cleaned and quickly pan-fry or steam them in minutes.&rdquo;<\/li>\n<li><strong>Lisa:<\/strong>
+        &ldquo;Instacart. Restaurant Depot allows you to order from them to your home
+        since the pandemic started. It&rsquo;s basically Costco for restaurants.&rdquo;<\/li>\n<li><strong>Arindam:<\/strong>
+        &ldquo;1-800-DIY.&rdquo;<\/li>\n<li><strong>Kristen:<\/strong> &ldquo;HelloFresh
+        has saved me the headache of what to make and shopping for ingredients.&rdquo;<\/li>\n<li><strong>Diane:<\/strong>
+        &ldquo;Make a big batch of pasta sauce or chili on Sunday, freeze some and
+        eat some throughout the week.&rdquo;<\/li>\n<\/ul><\/div>\r\n          <\/div>\n<h2><strong>The
+        Start of a New Diet<\/strong><\/h2>\n<p>I ordered my first round of Soylent
+        a month ago straight from the website. The package arrived three days later.
+        I opened the box and inside were a dozen white plastic bottles with black
+        caps.<\/p>\n<p>I waited to try one until the next day &mdash; I wanted to
+        start with an empty stomach so I could get the full effect. That morning,
+        I tried my first sip. It was oddly delicious. I was surprised.<\/p>\n<p>Soylent
+        is designed to have a neutral flavor so that the consumer doesn&rsquo;t get
+        sick of the taste. But still, it was slightly sweet. Soylent subtly smells
+        and tastes of a graham cracker and looks like a light cappuccino.<\/p>\n<h2><strong>An
+        Epic Diet Fail<\/strong><\/h2>\n<p>About 20 minutes later, I felt like I had
+        the flu. I ate some &ldquo;real&rdquo; food and the flu-like symptoms disappeared.
+        I tried more Soylent the next day. Same reaction. I tried two more times &mdash;
+        same reaction again.<\/p>\n<p>I drank part of one right before doing 45 minutes
+        of a cardio workout to check my energy levels. Exercising with the actual
+        flu would&rsquo;ve been easier.<\/p>\n<p>I Googled my symptoms. My reaction
+        was very rare. It&rsquo;s most likely the vanillin flavoring was to blame.
+        And with that, my Soylent diet journey came to an abrupt end.<\/p>\n<blockquote><p><strong>Although
+        my experience is negative, I still recommend you give it a try.<\/strong><\/p><\/blockquote>\n<p>I
+        got my mom, dad, and cousin to drink Soylent, and they all really enjoyed
+        it. At least <em>they<\/em> can save time, enjoy better health, and save money.<\/p>\n<p>I&rsquo;ll
+        continue my quest for a meal replacement beverage. So long, Soylent.<\/p>\n<p>Jamie
+        Sullivan, director of communication at Soylent, says: &ldquo;We know many
+        people use our products to save both time and money and are able to do so
+        successfully. However, we <strong>do not recommend <\/strong>anyone switching
+        to a Soylent only diet.&rdquo;<\/p>\n<p>&ldquo;Additionally, we always recommend
+        everyone connect with their doctor or dietitian to decide the best overall
+        meal plan to support your personal health goals and nutrition plan,&rdquo;
+        Sullivan adds.<\/p>\n<p>CentSai does not recommend changing your lifestyle
+        or dietary habits without consulting your physician.<\/p>\n<p><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/save-money\/frugality\/soylent-diet-ups-and-downs\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":80398,"post_template":"infographics","post_title":"[INFOGRAPHIC]
+        Same-Sex and Opposite Sex Couples: By the Numbers","post_content":"<!DOCTYPE
+        html PUBLIC \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p><img loading=\"lazy\" class=\"size-full
+        wp-image-80484 aligncenter\" src=\"https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Copy-of-Larger-of-Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png\"
+        alt=\"Gay and Straight Couples | Financial Planning\" width=\"767\" height=\"2000\"
+        srcset=\"https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Copy-of-Larger-of-Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png
+        767w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Copy-of-Larger-of-Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png
+        222w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Copy-of-Larger-of-Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png
+        213w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Copy-of-Larger-of-Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png
+        589w\" sizes=\"(max-width: 767px) 100vw, 767px\"><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/infographic\/gay-couples-vs-straight-couples-infographic\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null}],"count":2098,"pages":350}'
+  recorded_at: Wed, 14 Apr 2021 09:06:28 GMT
+recorded_with: VCR 6.0.0

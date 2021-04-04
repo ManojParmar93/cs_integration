@@ -7,14 +7,16 @@ module FmexDirect
       file_details = FmexDirect::PostsDownloader.new().call
 
       unless file_details[:are_items_present]
-        puts "\n\n---No new articles available for Fmex Direct---\n\n"
-        return
+        fmexdirect_error_massage = "\n\n---No new articles available for Fmex Direct---\n\n"
+        return fmexdirect_error_massage
       end
 
 
       file_content = file_details[:xml_rss_feed]
       file_name = file_details[:file_name]
       file_location = "public/fmax_direct/#{file_name}"
+      file_location = Rails.env.test? ? "spec/test_files/fmax_direct/#{file_name}" : "public/fmax_direct/#{file_name}"
+
       File.open(file_location, 'a+') {|f| f.write(file_content) }
 
       bucket = S3_BUCKET.objects["fmax_direct/#{file_name}"]
@@ -24,8 +26,9 @@ module FmexDirect
         acl: :public_read
       )
 
-      puts "https://#{ENV['S3_BUCKET']}.s3.ap-south-1.amazonaws.com/fmax_direct/#{file_name}"
       File.delete(file_location)
+      uploaded_file = "https://#{ENV['S3_BUCKET']}.s3.ap-south-1.amazonaws.com/fmax_direct/#{file_name}"
+      return uploaded_file
     end
   end
 end
