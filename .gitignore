@@ -40,4 +40,6 @@
 yarn-debug.log*
 .yarn-integrity
 .env
-public/rss_feeds/*
+public/centsai/*
+public/fmax_direct/*
+public/northentrust/*

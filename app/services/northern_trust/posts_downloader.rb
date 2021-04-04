@@ -84,7 +84,7 @@ module NorthernTrust
           article[:published_at].to_s
         ).to_formatted_s(:rfc822) rescue ""
         item.linke "https://www.northerntrust.com​#{article[:url]}"
-        item.description article[:articleDescription]
+        item.description ActionView::Base.full_sanitizer.sanitize(article[:articleDescription])
         # http://www.lowter.com/blogs/2008/2/9/rss-dccreator-author
         item.dc(:creator) do |dc|
           dc.text! article[:author_name]

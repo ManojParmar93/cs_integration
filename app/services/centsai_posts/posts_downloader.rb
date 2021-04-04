@@ -87,7 +87,7 @@ module CentsaiPosts
         item.dc(:creator) do |dc|
           dc.text! article[:author_name]
         end if article[:author_name].present?
-        item.description remove_html_content(article[:post_content])
+        item.description ActionView::Base.full_sanitizer.sanitize(article[:post_content])
         # Note that RSS 2.0 spec
         # does not validate with HTTPS.
         # These URLs are HTTPS from
@@ -112,7 +112,7 @@ module CentsaiPosts
         # https://developer.mozilla.org/en-US/docs/Web/RSS/
         # Article/Why_RSS_Content_Module_is_Popular_-_Including_HTML_Contents
         item.content(:encoded) do |content|
-          content.cdata!(remove_html_content(article[:post_content]))
+          content.cdata!(ActionView::Base.full_sanitizer.sanitize(article[:post_content]))
         end
       end
 

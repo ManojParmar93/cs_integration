@@ -13,7 +13,6 @@ module FmexDirect
       @file_name = "#{post_response['content_title'].downcase.split('').select{|char| char == ' ' || VALID_FILE_NAME_CHARACTERS.include?(char)}.join('').gsub(' ', '_')}.rss"
       articles = post_response['content_section']['section_categories']
       @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
-
       @channel_data = {title: post_response['content_title'],
         link: post_response['content_publisher']&.try(:[], 'publisher_url'),
         description: post_response['content_description']}
@@ -95,7 +94,7 @@ module FmexDirect
         item.dc(:creator) do |dc|
           dc.text! @author_details['author_name']
         end if @publisher_details.present?
-        item.description article[:category_description]
+        item.description ActionView::Base.full_sanitizer.sanitize(article[:category_description])
         # Note that RSS 2.0 spec
         # does not validate with HTTPS.
         # These URLs are HTTPS from
