@@ -3,6 +3,7 @@ require 'net/http'
 
 module CentsaiPosts
   class PostsDownloader
+    include ApplicationHelper
     CENTSAI_POSTS_URI = 'https://centsai.com/api/centsai-api.php'
 
     def initialize
