@@ -4,11 +4,23 @@ require 'net/http'
 module FmexDirect
   class PostsDownloader
     FMEX_DIRECT_POSTS_URI = "https://app.fmexdirect.com/api/v1/content?accessKey=FMEX-TEST-KEY&content_id=2037"
+    VALID_FILE_NAME_CHARACTERS = %w[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z]
 
     def initialize
-      articles = get_posts['content_section']['section_categories']
+      post_response = get_posts
+      @author_details = post_response['content_author']
+      @published_at = Time.zone.parse(post_response['content_date_updated']) rescue Time.now
+      @file_name = "#{post_response['content_title'].downcase.split('').select{|char| char == ' ' || VALID_FILE_NAME_CHARACTERS.include?(char)}.join('').gsub(' ', '_')}.rss"
+      articles = post_response['content_section']['section_categories']
       @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
-      @channel_data = {}
+
+      @channel_data = {title: post_response['content_title'],
+        link: post_response['content_publisher']&.try(:[], 'publisher_url'),
+        description: post_response['content_description']}
+    end
+
+    def call
+      {xml_rss_feed: xml_rss_feed, file_name: @file_name}
     end
 
     def xml_rss_feed
@@ -63,7 +75,7 @@ module FmexDirect
         channel.title @channel_data[:title]
         channel.link @channel_data[:link]
         channel.description @channel_data[:description]
-        channel.pubDate DateTime.now.utc.to_formatted_s(:rfc822) rescue ""
+        channel.pubDate @published_at.utc.to_formatted_s(:rfc822) rescue ""
         make_items(channel)
       end
 
@@ -76,16 +88,14 @@ module FmexDirect
       end
 
       def make_item(item, article) # rubocop:disable MethodLength, AbcSize
-        item.guid article[:post_id]
-        item.title article[:post_title]
-        item.pubDate Time.zone.parse(
-          article[:published_at].to_s
-        ).to_formatted_s(:rfc822) rescue ""
+        item.guid article[:category_id]
+        item.title article[:category_title]
+        item.pubDate @published_at.to_formatted_s(:rfc822) rescue ""
         # http://www.lowter.com/blogs/2008/2/9/rss-dccreator-author
         item.dc(:creator) do |dc|
-          dc.text! article[:author_name]
-        end if article[:author_name].present?
-        item.description article[:post_content]
+          dc.text! @author_details['author_name']
+        end if @publisher_details.present?
+        item.description article[:category_description]
         # Note that RSS 2.0 spec
         # does not validate with HTTPS.
         # These URLs are HTTPS from
@@ -95,22 +105,22 @@ module FmexDirect
         # FeedJira will pick this up.
         item.media(
           :content,
-          url: article[:post_url],
-          fileSize: article[:image_size],
-          type: article[:image_type]
+          url: article[:category_image],
+          fileSize: '',
+          type: 'category_image'
         ) do |media_content|
           media_content.media(
             :credit,
             role: 'photographer',
             scheme: 'urn:ebu'
-          ) do |media_credit|
-            media_credit.text! article[:image_credit]
-          end if article[:image_credit].present?
-        end if article[:image_url].present?
+          ) #do |media_credit|
+          #   media_credit.text! article[:image_credit]
+          # end if article[:image_credit].present?
+        end if article[:category_image].present?
         # https://developer.mozilla.org/en-US/docs/Web/RSS/
         # Article/Why_RSS_Content_Module_is_Popular_-_Including_HTML_Contents
         item.content(:encoded) do |content|
-          content.cdata!(article[:post_content])
+          content.cdata!(article[:category_description])
         end
       end
 
