@@ -7,8 +7,8 @@ module FmexDirect
       file_details = FmexDirect::PostsDownloader.new().call
 
       unless file_details[:are_items_present]
-        puts "\n\n---No new articles available for Fmex Direct---\n\n"
-        return
+        fmexdirect_error_massage = "\n\n---No new articles available for Fmex Direct---\n\n"
+        return fmexdirect_error_massage
       end
 
 
@@ -24,8 +24,9 @@ module FmexDirect
         acl: :public_read
       )
 
-      puts "https://#{ENV['S3_BUCKET']}.s3.ap-south-1.amazonaws.com/fmax_direct/#{file_name}"
       File.delete(file_location)
+      uploaded_file = "https://#{ENV['S3_BUCKET']}.s3.ap-south-1.amazonaws.com/fmax_direct/#{file_name}"
+      return uploaded_file
     end
   end
 end

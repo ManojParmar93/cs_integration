@@ -1,0 +1,777 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://centsai.com/api/centsai-api.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Basic YXBpdXNlckB2ZXN0b3JseS5jb206VmVzdG9ybHlAQ2VudFNhaUFQSSE=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Sun, 11 Apr 2021 10:20:26 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - ''
+      access-control-allow-methods:
+      - GET,POST
+      access-control-allow-credentials:
+      - 'true'
+      access-control-max-age:
+      - '86400'
+      access-control-allow-headers:
+      - Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+      x-xss-protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"posts":[{"post_id":4216,"post_template":"default","post_title":"Soylent
+        Diet: The Ups and Downs","post_content":"<!DOCTYPE html PUBLIC \"-\/\/W3C\/\/DTD
+        HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p>Instead of trying to save money on groceries,
+        I decided to do away with them altogether. Am I joking? Technically, no. I
+        <em>did<\/em> stop eating and stop buying groceries. How? The Soylent diet.<\/p>\n<p>Soylent
+        is a meal replacement beverage. It was created by a computer scientist, not
+        a chef, and it&rsquo;s engineered to give your body everything you need to
+        function well. This means somebody can live entirely off this drink alone,
+        and &mdash; in theory &mdash; should still lead a perfectly normal life.<\/p>\n<p>Changing
+        your lifestyle to this extent isn&rsquo;t as abnormal as you may think. In
+        the United States, the meal replacement market is worth a shocking $4.1 billion,
+        according to IBISWorld.<\/p>\n<p><\/p>\n<h2><strong>Time Is Money<\/strong><\/h2>\n<p>The
+        Soylent diet caught my attention for many reasons. The first actually wasn&rsquo;t
+        about money &mdash; it was about time.<\/p>\n<p>You may think I&rsquo;m being
+        stingy with my time, but I&rsquo;m young. Think of all the time I would save
+        by not having to cook. That would effectively add months to my life! I also
+        wouldn&rsquo;t have to grocery shop very often (never, really). Soylent can
+        be delivered to my door.<\/p>\n<p>The second reason I found it so appealing
+        was for health reasons. Stay with me, because I&rsquo;m about to get pretty
+        holistic about life.<\/p>\n<blockquote><p><strong><em>I love automation. Automation
+        means you can set something good in motion and have it run without you.<\/em><\/strong><\/p><\/blockquote>\n<p>This
+        means you can do awesome things without constant motivation. Think automatic
+        bill pay or 401(k) contributions.<\/p>\n<p>Without Soylent, I&rsquo;m constantly
+        having to make healthy eating decisions. I eat at least three meals per day.
+        That means I&rsquo;m having to consciously make healthy choices three-plus
+        times per day, so I sometimes don&rsquo;t eat as healthy as I should. With
+        Soylent, I can be healthy without having to worry about the ingredients.<\/p>\n<p>Of
+        course, I wouldn&rsquo;t replace <em>all<\/em> my meals with Soylent. But
+        many of my boring meals would get replaced.<\/p>\n<h2><strong>Vacation Meals
+        on a Budget<\/strong><\/h2>\n<p>The final reason Soylent caught my eye is
+        the cost. Prices vary based on the amount and whether it&rsquo;s in bottled
+        or powder form for you to mix, but it&rsquo;s around $3 per bottle, or $3
+        per meal.<\/p>\n<p>Though that&rsquo;s more expensive than most home-cooked
+        meals, it saves a lot of money when traveling or just being out and about.
+        Instead of needing to buy a meal, you can just pull a bottle out of your backpack
+        or purse, and crack it open.<\/p>\n<p><span class=\"aff-cta\"><label>Save
+        Time and Eat Better With Personalized Recipes and Grocery Lists <\/label>
+        Visit Site<\/span><\/p>\n<div class=\"chck-lst-box small-box\">\r\n\t\t\t<div
+        class=\"chck-lst-head\"><span>Food Hacks That Save Our Readers Time and Money<\/span><\/div>\r\n            <div
+        class=\"chck-lst-body\"><ul><li><strong>Chris<\/strong>: &ldquo;Purple Carrot
+        delivers a box with three vegan meals to prepare a week. The best part is
+        that it comes with a little cookbook each time. I just buy the ingredients
+        later on if I want to make a recipe again. It got me out of a rut of making
+        me the same stuff&hellip;&rdquo;<\/li>\n<li><strong>Stuart<\/strong>: &ldquo;I
+        make my own chicken broth from store-bought rotisserie chickens. I hate using
+        fresh onion, carrot or celery just for broth. I developed the habit of taking
+        scraps of the three when I cook and storing them in a container in the freezer.
+        When I need to make broth, I just dump it into my instant pot with my chicken.
+        Saves time and money.&rdquo;<\/li>\n<li><strong>Teresa:<\/strong> &ldquo;Pay
+        attention to how often your favorite products go on sale and stock up on enough
+        to last you until the next cycle. There is a fairly predictable sales cycle.&rdquo;<\/li>\n<li><strong>Patrick:<\/strong>
+        &ldquo;Instant Pot. Two magic words.&rdquo;<\/li>\n<li><strong>Tonia:<\/strong>
+        &ldquo;If you have the space, get a big box or upright extra freezer. Make
+        massive batches of dishes like taco meat, slow-cooked pork, pot roast, Indian
+        curry, rice dishes of any kind, etc. Batch them into containers so there&rsquo;s
+        no cooking during the week. We do this and order in once a week. We keep fresh
+        broccoli, string beans and cauliflower in large Tupperware containers pre-cut
+        and cleaned and quickly pan-fry or steam them in minutes.&rdquo;<\/li>\n<li><strong>Lisa:<\/strong>
+        &ldquo;Instacart. Restaurant Depot allows you to order from them to your home
+        since the pandemic started. It&rsquo;s basically Costco for restaurants.&rdquo;<\/li>\n<li><strong>Arindam:<\/strong>
+        &ldquo;1-800-DIY.&rdquo;<\/li>\n<li><strong>Kristen:<\/strong> &ldquo;HelloFresh
+        has saved me the headache of what to make and shopping for ingredients.&rdquo;<\/li>\n<li><strong>Diane:<\/strong>
+        &ldquo;Make a big batch of pasta sauce or chili on Sunday, freeze some and
+        eat some throughout the week.&rdquo;<\/li>\n<\/ul><\/div>\r\n          <\/div>\n<h2><strong>The
+        Start of a New Diet<\/strong><\/h2>\n<p>I ordered my first round of Soylent
+        a month ago straight from the website. The package arrived three days later.
+        I opened the box and inside were a dozen white plastic bottles with black
+        caps.<\/p>\n<p>I waited to try one until the next day &mdash; I wanted to
+        start with an empty stomach so I could get the full effect. That morning,
+        I tried my first sip. It was oddly delicious. I was surprised.<\/p>\n<p>Soylent
+        is designed to have a neutral flavor so that the consumer doesn&rsquo;t get
+        sick of the taste. But still, it was slightly sweet. Soylent subtly smells
+        and tastes of a graham cracker and looks like a light cappuccino.<\/p>\n<h2><strong>An
+        Epic Diet Fail<\/strong><\/h2>\n<p>About 20 minutes later, I felt like I had
+        the flu. I ate some &ldquo;real&rdquo; food and the flu-like symptoms disappeared.
+        I tried more Soylent the next day. Same reaction. I tried two more times &mdash;
+        same reaction again.<\/p>\n<p>I drank part of one right before doing 45 minutes
+        of a cardio workout to check my energy levels. Exercising with the actual
+        flu would&rsquo;ve been easier.<\/p>\n<p>I Googled my symptoms. My reaction
+        was very rare. It&rsquo;s most likely the vanillin flavoring was to blame.
+        And with that, my Soylent diet journey came to an abrupt end.<\/p>\n<blockquote><p><strong>Although
+        my experience is negative, I still recommend you give it a try.<\/strong><\/p><\/blockquote>\n<p>I
+        got my mom, dad, and cousin to drink Soylent, and they all really enjoyed
+        it. At least <em>they<\/em> can save time, enjoy better health, and save money.<\/p>\n<p>I&rsquo;ll
+        continue my quest for a meal replacement beverage. So long, Soylent.<\/p>\n<p>Jamie
+        Sullivan, director of communication at Soylent, says: &ldquo;We know many
+        people use our products to save both time and money and are able to do so
+        successfully. However, we <strong>do not recommend <\/strong>anyone switching
+        to a Soylent only diet.&rdquo;<\/p>\n<p>&ldquo;Additionally, we always recommend
+        everyone connect with their doctor or dietitian to decide the best overall
+        meal plan to support your personal health goals and nutrition plan,&rdquo;
+        Sullivan adds.<\/p>\n<p>CentSai does not recommend changing your lifestyle
+        or dietary habits without consulting your physician.<\/p>\n<p><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/save-money\/frugality\/soylent-diet-ups-and-downs\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":80398,"post_template":"infographics","post_title":"[INFOGRAPHIC]
+        Same-Sex and Opposite Sex Couples: By the Numbers","post_content":"<!DOCTYPE
+        html PUBLIC \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p><img loading=\"lazy\" class=\"aligncenter
+        wp-image-80399 size-full\" src=\"https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png\"
+        alt=\"Gay and Straight Couples | Financial Planning\" width=\"767\" height=\"2000\"
+        srcset=\"https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png
+        767w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png
+        222w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png
+        213w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png
+        589w\" sizes=\"(max-width: 767px) 100vw, 767px\"><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/infographic\/gay-couples-vs-straight-couples-infographic\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":80405,"post_template":"column","post_title":"The
+        Best Methodologies for Teaching Financial Literacy","post_content":"<!DOCTYPE
+        html PUBLIC \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p>Financial literacy continues to make slow
+        strides in gaining attention, while discussions of appropriate methodologies
+        in a school setting remain scant. The lack of sufficient attention to methodology
+        has hindered progress; many programs lack meaningful evaluation and longitudinal
+        studies are few.<\/p>\n<p>This creates a circular problem: It is difficult
+        to get support to expand programs when there is a lack of verifiable evidence
+        of their effectiveness, which makes it more difficult to move forward and
+        gain that evidence.<\/p>\n<p>A saving grace is the vast need for financial
+        literacy. Despite sufficient evidence of effectiveness, there is a growing
+        body of evidence of need. Real people are suffering the consequences of financial
+        illiteracy every day. The financial world continues to get more complex and
+        people are visibly getting left behind.<\/p>\n<p><\/p>\n<h2><strong>Financial
+        Literacy Mandates<\/strong><\/h2>\n<p>There continues to be slow progress
+        in the number of states requiring some form of personal financial literacy
+        education as a high school graduation requirement. It&rsquo;s now about half,
+        which is significant, but it is clearly not where we need to be.<\/p>\n<p>Few
+        states, however, require students to take a stand-alone course in personal
+        finance. More require personal finance education integrated with other coursework.
+        Mandates are great, but they don&rsquo;t mean that it actually happens.<\/p>\n<p>It
+        is concerning to see young people graduating high school barely able to read
+        or write; there can be little confidence that they somehow attained reasonable
+        financial literacy education while missing out on reading in schools.<\/p>\n<p>The
+        mandates are not always being followed. Schools face many challenges, and
+        states aren&rsquo;t going to push very hard on getting those who can&rsquo;t
+        read to be good with money. They probably feel they have bigger problems.<\/p>\n<p>State
+        financial literacy education mandates in schools are important but not sufficient.<\/p>\n<h2><strong>The
+        Feedback Challenge<\/strong><\/h2>\n<p>Financial literacy education should
+        make a lifetime of difference. All too often results are either not measured
+        or measured at a point in time. And the focus tends to be on knowledge alone.<\/p>\n<p>Knowledge
+        is important, but financial literacy is a skill; you need to apply it and
+        use it to develop the skill. You learn skills through practicing with knowledge
+        &mdash; both knowledge and experience are required.<\/p>\n<p>It is a lot like
+        welding &mdash; you can read a bunch of books but that does not make you competent
+        with a torch. You need both knowledge and experience to be a good welder,
+        as you need both knowledge and experience to be competent at any skill.<\/p>\n<p>Doesn&rsquo;t
+        matter if it is baking or flying or financial literacy, knowledge does little
+        without experience, and experience can be an expensive and dangerous teacher
+        in the absence of knowledge. They are inseparable; neither has meaningful
+        value alone.<\/p>\n<p><span class=\"aff-cta\"><label>Raising Financially-Smart
+        Kids Made Easy<\/label> An App that can be Managed by Parents<\/span><\/p>\n<p>In
+        a classroom, there are options to develop the skills of financial literacy,
+        just as you would with welding or baking. Financial literacy skills can be
+        developed with cases and games, with interactive tools and with competitions.<\/p>\n<p>Hands-on
+        training provides the learner with a feedback loop. They take an action and
+        a consequence develops. Knowledge training without an experiential component
+        is better than nothing, but it cannot compete with experience.<\/p>\n<p>An
+        ideal situation is directly hands on. Games are a great substitute, but not
+        the only option. Case studies, learning from stories and critiquing the actions
+        of others, even simple exercises can add a hands-on component to knowledge
+        training and improve the likelihood of long-term improvement.<\/p>\n<p>Knowledge
+        has the singular advantage of being easy to test and evaluate. Assessments
+        can measure knowledge gains whereas skill development is harder to evaluate.<\/p>\n<h2><strong>Program
+        Elements<\/strong><\/h2>\n<p>Effective financial literacy education needs
+        to develop several skills. Some are overlooked in knowledge-based programs.<\/p>\n<p>To
+        be financially literate, you need to be able to evaluate financial alternatives.
+        This can be useful in day-to-day activities like comparison shopping and is
+        essential for major purchases.<\/p>\n<p>Financially literate people should
+        be able to compare mortgage options and make a reasonable choice based on
+        their situation and should be able to evaluate choices like leasing a car
+        versus buying a car. Financial decision-making is an essential financial literacy
+        skill.<\/p>\n<p>Using technology in finance is important and growing in importance.
+        There are fantastic tools available to assist individuals in a myriad of financial
+        challenges. But using powerful tools without knowledge of the consequences
+        can be a recipe for disaster.<\/p>\n<p>Students need to not only know how
+        to use technology &mdash; that&rsquo;s the easy part &mdash; but they also
+        need to know when to use technology and what the potential risks are. It is
+        too easy to invest in risky investments with technology.<\/p>\n<blockquote><p><strong>Unfortunately,
+        you can experience negative consequences without even knowing the consequences
+        were possible.<\/strong><\/p><\/blockquote>\n<p>Technology can be wonderful
+        and powerful, or it can be crippling.<\/p>\n<p>Fraud awareness and preventing
+        it needs to be an element of a good financial education. It has been bad out
+        there, and it is getting worse. People need to know how to protect themselves,
+        and where to find out what to watch for as the bad people get better at what
+        they do.<\/p>\n<p><\/p>\n<h2><strong>Behavioral Finance<\/strong><\/h2>\n<p>Behavioral
+        finance can no longer be ignored. In school, individuals need to learn about
+        the behavioral aspects of financial literacy and how to deal with the biggest
+        obstacle they will face on their journey to financial success: themselves.<\/p>\n<p>Money
+        is an emotional topic. Emotions can cause people to make suboptimal decisions.
+        Car dealers know this. You should too.<\/p>\n<p>Students need to learn about
+        the risks behavior brings to the table &mdash; and how to combat those risks.
+        There must be proactive to solutions to deal with our human tendencies, which
+        do not serve us well as long-term accumulators. The more we understand and
+        are aware of our own shortcomings the greater our ability to overcome them
+        and achieve success.<\/p>\n<p>Markets and volatility are not what holds investors
+        back; behaviors in the face of market conditions and volatility are what holds
+        investors back. Behavioral finance is an essential component of financial
+        literacy.<\/p>\n<h2><strong>Systems Thinking<\/strong><\/h2>\n<p>Financial
+        literacy can benefit from systems thinking. Nothing occurs without impacting
+        other things. This is as true in financial matters as it is in any other system.<\/p>\n<p>If
+        you increase your 401(k) contributions, for example, it impacts not only your
+        retirement preparedness, but also your cash flow and your taxes and may impact
+        other areas of your financial life. Any single change has the potential for
+        multiple consequences.<\/p>\n<p>Likewise, financial literacy and financial
+        matters occur within larger systems. An individual&rsquo;s numeracy skills
+        are a codeterminant of their financial capability. Those with low numeracy
+        skills are more likely to struggle financially.<\/p>\n<p>Numeracy education
+        is not financial education, but supports financial education. Those challenged
+        by numeracy need to gain knowledge of and comfort with other tools to assist
+        with numeracy.<\/p>\n<h2><strong>Talk It to Death<\/strong><\/h2>\n<p>A major
+        aim of basic financial literacy programs is to raise awareness while developing
+        rudimentary skills.<\/p>\n<p>We can help. We can help in our families and
+        we can help in our workplaces. And we can help by simply talking it to death.<\/p>\n<p>We
+        can and should talk about financial matters at home. We should talk about
+        budgets and we should talk about the process of evaluating financial alternatives.<\/p>\n<p><span
+        class=\"aff-cta\"><label>Raising Financially-Smart Kids Made Easy<\/label>
+        An App that can be Managed by Parents<\/span><\/p>\n<p>Children who grow up
+        in a home where the parents smoke are more likely to smoke; children who grow
+        up in homes where the parents demonstrate financial awareness and restraint
+        are similarly more likely to pick up these habits.<\/p>\n<p>Don&rsquo;t demonstrate
+        the habits you don&rsquo;t want the kids to pick up, and repeat the habits
+        you would like them to obtain.<\/p>\n<p>Many of us can talk up financial literacy
+        at work. We can be advocates for the 401(k) or other retirement plans. We
+        can be advocates for debt reduction and we can be advocates for emergency
+        funds and we can be advocates for budgets. And we can do that without being
+        obnoxious. People don&rsquo;t like to be told what to do, but they do love
+        stories.<\/p>\n<blockquote><p><strong>If you have a passion for financial
+        literacy or financial wellness, you can share that passion.<\/strong><\/p><\/blockquote>\n<p>You
+        may be surprised not only by how many people are interested, but also that
+        they will make changes and be excited to tell you of their own progress.<\/p>\n<p>Talk
+        it up. Stories are a very powerful teaching tool. Talk it to death.<\/p>\n<h2><strong>The
+        Bottom Line<\/strong><\/h2>\n<p>There is no silver bullet for financial illiteracy.
+        Amazing things are happening, but we still have a long way to go.<\/p>\n<p>Financial
+        literacy is a complex skill and we can spend a lifetime continually learning
+        new things. But we won&rsquo;t if we don&rsquo;t have a solid start. Financial
+        literacy education needs to build the foundation upon which individuals can
+        build the financial lives they wish to have.<\/p>\n<p>We need to keep the
+        idea of skill or capability as a guiding principle. Knowledge of the difference
+        among investment types is nice but evaluating those differences is essential.
+        The skills can be used in changing situations.<\/p>\n<p>There are many tools
+        that can be used to enhance skill-building. Technology continues to help.
+        There are more great videos and simulations and games available every day.
+        There is a lot of power in stories. The more we can talk up financial literacy
+        the bigger difference we can make.<\/p>\n<p>The forum in which we present
+        may constrain the techniques or methodologies we can use, but we can always
+        enhance financial literacy education in schools by making it experiential.
+        That is what people will most carry forward; that is where the difference
+        is made.<\/p>\n<p><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/must-reads\/centsai-sensei\/best-strategies-for-teaching-financial-literacy-in-school\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":29734,"post_template":"column","post_title":"[VIDEO]
+        Frugality Is Not Financial Literacy","post_content":"<!DOCTYPE html PUBLIC
+        \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p>Perusing social media might lead you to
+        believe that frugality is the essence of financial literacy. Not necessarily.
+        Frugal people rarely own airplanes or yachts. The 47 percent of Americans
+        who are financially literate and budget-conscious, according to Harris Insights
+        and Analytics, very well might.<\/p>\n<p>Frugal people focus on not wasting
+        money &mdash; on minimizing their expenses. This can be difficult for low-income
+        households to manage thanks to liquidity restraints, according to a report
+        in the Journal of Marketing Research.<\/p>\n<p><\/p>\n<p>Though those low-income
+        households stand to benefit the most from frugal strategies, such as the ability
+        to buy in bulk, they are unfortunately unable to put those strategies into
+        effect.<\/p>\n<p>Financially literate people, on the other hand, understand
+        the consequences of their financial decisions and act accordingly. They use
+        financial resources intentionally. Financially literate people focus on making
+        good money decisions. And the best decision often isn&rsquo;t the most frugal
+        one.<\/p>\n<h2><strong>Living Within Your Means<\/strong><\/h2>\n<p>The common
+        ground between frugality and financial literacy is living within your means.
+        But the two approaches are quite different.<\/p>\n<p>In the context of doing
+        well financially, living within one&rsquo;s means requires that the sum of
+        one&rsquo;s expenses and savings must be at or below one&rsquo;s income. This
+        principle transcends both ideologies.<\/p>\n<blockquote><p><strong>To be financially
+        successful, one has to live within one&rsquo;s means.<\/strong><\/p><\/blockquote>\n<p><img
+        loading=\"lazy\" class=\"alignleft wp-image-39617 size-medium\" src=\"https:\/\/centsai.com\/wp-content\/uploads\/2017\/09\/Frugality-is-Not-Financial-Literacy-1.png\"
+        alt=\"Frugality is Not Financial Literacy. Yes, it''s right! Many people seem
+        to think that financial literacy means learning to lead a frugal lifestyle.
+        But this is far from the truth. #frugality #frugal #financialliteracy\" width=\"267\"
+        height=\"400\"><\/p>\n<p>This &ldquo;means equation&rdquo; says that we get
+        to spend no more than we make. The frugality camp focuses on minimizing the
+        expenses side of the equation. Unfortunately, neglecting the revenue side
+        can be a big mistake.<\/p>\n<h2><strong>Reducing Expenses vs. Increasing Revenue<\/strong><\/h2>\n<p>It
+        should be fairly apparent that there&rsquo;s more room to change the revenue
+        side of the equation than the expense side &mdash; at least theoretically.
+        Changes to the expense side of the equation are limited to the total of the
+        expenses &mdash; you can&rsquo;t reduce your expenses beyond zero.<\/p>\n<p>The
+        revenue side does not have this barrier. The revenue side is, theoretically,
+        infinitely changeable.<\/p>\n<p><span class=\"aff-cta\"><label>Get Matched
+        With a Financial Adviser Most Suited to Your Unique Needs<\/label> Maximize
+        Your Retirement Efforts Today<\/span><\/p>\n<p>There may be a variety of challenges
+        when it comes to making dramatic increases in the revenue side of the equation.
+        This is especially true in the short term.<\/p>\n<p>Increasing one&rsquo;s
+        income can take a lot of time and hard work. It can also require you to make
+        an intermediate investment, such as getting training or education.<\/p>\n<blockquote><p><strong><em>Meanwhile,
+        frugality &mdash; much like laziness &mdash; pays off immediately.<\/em><\/strong><\/p><\/blockquote>\n<p>This
+        is frugality&rsquo;s great benefit. Frugality as a tool can help us to navigate
+        times of low income, such as a period of unemployment. Frugality can also
+        help us to push out additional savings to meet a short-term goal.<\/p>\n<p>But
+        eventually, a frugal lifestyle often burns us out. Living &ldquo;without&rdquo;
+        robs us of many simple pleasures. It robs us of the emotional peace of enjoying
+        simple things because it makes us believe that we&rsquo;re bad for wasting
+        money on ourselves.<\/p>\n<h2><strong>Frugality vs. Financial Literacy: The
+        Bottom Line<\/strong><\/h2>\n<p>In the long term, we need to tell frugality
+        to pound salt. We need to understand that our self-worth is not equal to the
+        number of pennies saved, and we will buy that damn ice cream if we want. Some
+        of those little expenses contribute to self-care, which is important for our
+        mental and emotional health.<\/p>\n<p>Financial literacy &mdash; making informed
+        and intentional financial decisions &mdash; allows us to do what we want,
+        if we&rsquo;re willing. If we&rsquo;re willing to understand the ramifications
+        of our decisions, then the sky&rsquo;s the limit.<\/p>\n<p>Or the sea&rsquo;s
+        the limit, depending on whether you picked the airplane or the yacht. It&rsquo;s
+        all about decisions.<\/p>\n<p>In the long run, you can have anything that
+        you&rsquo;re willing to earn and build for. Or you can spend less and have
+        what&rsquo;s left over. Frugality is a tool. Financial literacy is the whole
+        tool set.<\/p>\n<p>The ball is in your court. Choose wisely.<\/p>\n<p><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/must-reads\/centsai-sensei\/frugality-not-financial-literacy\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"https:\/\/www.youtube.com\/watch?v=nHFoSrUsEMU","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":80369,"post_template":"infographics","post_title":"[INFOGRAPHIC]
+        Tips for Borrowing Money From or Lending to Family and Friends","post_content":"<!DOCTYPE
+        html PUBLIC \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p><img loading=\"lazy\" class=\"aligncenter
+        wp-image-80379 size-full\" src=\"https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Borrowing-or-Loaning-Money-Infographic-B-VERSION_-Resized-767-x-2000.png\"
+        alt=\"\" width=\"767\" height=\"2000\" srcset=\"https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Borrowing-or-Loaning-Money-Infographic-B-VERSION_-Resized-767-x-2000.png
+        767w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Borrowing-or-Loaning-Money-Infographic-B-VERSION_-Resized-767-x-2000.png
+        222w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Borrowing-or-Loaning-Money-Infographic-B-VERSION_-Resized-767-x-2000.png
+        213w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Borrowing-or-Loaning-Money-Infographic-B-VERSION_-Resized-767-x-2000.png
+        589w\" sizes=\"(max-width: 767px) 100vw, 767px\"><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/infographic\/borrowing-money-friends-cfpb-infographic\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":80317,"post_template":"sheventure_podcast","post_title":"Listen:
+        Actionable Tips to Manage Debt With Leslie Tayne","post_content":"<!DOCTYPE
+        html PUBLIC \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p style=\"text-align: center;\"><img loading=\"lazy\"
+        class=\"alignnone size-full wp-image-1305\" src=\"https:\/\/sheventures.centsai.com\/wp-content\/uploads\/2021\/04\/IMG_8890_25.png\"
+        alt=\"leslie tayne\" width=\"443\" height=\"248\"><\/p>\n<p><iframe loading=\"lazy\"
+        style=\"border: none;\" src=\"\/\/html5-player.libsyn.com\/embed\/episode\/id\/18238370\/height\/90\/theme\/custom\/thumbnail\/yes\/direction\/backward\/render-playlist\/no\/custom-color\/39008a\/\"
+        width=\"100%\" height=\"90\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\"><\/iframe><\/p>\n<p><span
+        style=\"font-weight: 400;\">To begin Financial Literacy Month on SheVentures,
+        who better than Leslie Tayne to discuss one of America&rsquo;s biggest financial
+        problems: debt, a $14.6T reality for American households.<\/span><\/p>\n<p><span
+        style=\"font-weight: 400;\">Leslie Tayne always knew she wanted to be a lawyer
+        despite her father warning her when she started 20 years ago that it truly
+        was a boys club.<\/span><\/p>\n<p><span style=\"font-weight: 400;\">She tried
+        many facets of the law before she pivoted to what became her passion &mdash;
+        as in-house counsel to a debt company.<\/span><\/p>\n<p><span style=\"font-weight:
+        400;\">Today, The Tayne Law Group is changing the face of debt resolution
+        law. Her mission is to create a more constructive way of handling debt resolution.
+        Tayne is well respected as someone who focuses on the solution and how to
+        educate and engage her clients.<\/span><\/p>\n<p><span style=\"font-weight:
+        400;\">Tayne&rsquo;s &ldquo;open door&rdquo; policy encourages her clients
+        to consult with her team before taking a financial action they may regret
+        later &mdash; such as student loan and credit card debt, decisions on major
+        purchases like buying a new car, or taking out a mortgage. With a focus on
+        financial wellness and working with their clients as a team, Tayne&rsquo;s
+        group points clients in the right direction, even if it&rsquo;s outside their
+        practice. She wants to do what is in their best financial interest.<\/span><\/p>\n<p><span
+        style=\"font-weight: 400;\">Listen to find out what actionable steps you should
+        take if you find yourself in seemingly insurmountable debt &mdash; facing
+        unemployment, the unexpected positives of COVID-19, and the truth behind debt
+        consolidation myths on this episode of SheVentures.<\/span><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/podcast\/sheventures-episode-76-leslie-tayne\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null}],"count":2094,"pages":349}'
+  recorded_at: Sun, 11 Apr 2021 10:20:27 GMT
+- request:
+    method: get
+    uri: https://centsai.com/api/centsai-api.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Basic YXBpdXNlckB2ZXN0b3JseS5jb206VmVzdG9ybHlAQ2VudFNhaUFQSSE=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Sun, 11 Apr 2021 10:20:28 GMT
+      content-type:
+      - application/json; charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - ''
+      access-control-allow-methods:
+      - GET,POST
+      access-control-allow-credentials:
+      - 'true'
+      access-control-max-age:
+      - '86400'
+      access-control-allow-headers:
+      - Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+      x-xss-protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"posts":[{"post_id":4216,"post_template":"default","post_title":"Soylent
+        Diet: The Ups and Downs","post_content":"<!DOCTYPE html PUBLIC \"-\/\/W3C\/\/DTD
+        HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p>Instead of trying to save money on groceries,
+        I decided to do away with them altogether. Am I joking? Technically, no. I
+        <em>did<\/em> stop eating and stop buying groceries. How? The Soylent diet.<\/p>\n<p>Soylent
+        is a meal replacement beverage. It was created by a computer scientist, not
+        a chef, and it&rsquo;s engineered to give your body everything you need to
+        function well. This means somebody can live entirely off this drink alone,
+        and &mdash; in theory &mdash; should still lead a perfectly normal life.<\/p>\n<p>Changing
+        your lifestyle to this extent isn&rsquo;t as abnormal as you may think. In
+        the United States, the meal replacement market is worth a shocking $4.1 billion,
+        according to IBISWorld.<\/p>\n<p><\/p>\n<h2><strong>Time Is Money<\/strong><\/h2>\n<p>The
+        Soylent diet caught my attention for many reasons. The first actually wasn&rsquo;t
+        about money &mdash; it was about time.<\/p>\n<p>You may think I&rsquo;m being
+        stingy with my time, but I&rsquo;m young. Think of all the time I would save
+        by not having to cook. That would effectively add months to my life! I also
+        wouldn&rsquo;t have to grocery shop very often (never, really). Soylent can
+        be delivered to my door.<\/p>\n<p>The second reason I found it so appealing
+        was for health reasons. Stay with me, because I&rsquo;m about to get pretty
+        holistic about life.<\/p>\n<blockquote><p><strong><em>I love automation. Automation
+        means you can set something good in motion and have it run without you.<\/em><\/strong><\/p><\/blockquote>\n<p>This
+        means you can do awesome things without constant motivation. Think automatic
+        bill pay or 401(k) contributions.<\/p>\n<p>Without Soylent, I&rsquo;m constantly
+        having to make healthy eating decisions. I eat at least three meals per day.
+        That means I&rsquo;m having to consciously make healthy choices three-plus
+        times per day, so I sometimes don&rsquo;t eat as healthy as I should. With
+        Soylent, I can be healthy without having to worry about the ingredients.<\/p>\n<p>Of
+        course, I wouldn&rsquo;t replace <em>all<\/em> my meals with Soylent. But
+        many of my boring meals would get replaced.<\/p>\n<h2><strong>Vacation Meals
+        on a Budget<\/strong><\/h2>\n<p>The final reason Soylent caught my eye is
+        the cost. Prices vary based on the amount and whether it&rsquo;s in bottled
+        or powder form for you to mix, but it&rsquo;s around $3 per bottle, or $3
+        per meal.<\/p>\n<p>Though that&rsquo;s more expensive than most home-cooked
+        meals, it saves a lot of money when traveling or just being out and about.
+        Instead of needing to buy a meal, you can just pull a bottle out of your backpack
+        or purse, and crack it open.<\/p>\n<p><span class=\"aff-cta\"><label>Save
+        Time and Eat Better With Personalized Recipes and Grocery Lists <\/label>
+        Visit Site<\/span><\/p>\n<div class=\"chck-lst-box small-box\">\r\n\t\t\t<div
+        class=\"chck-lst-head\"><span>Food Hacks That Save Our Readers Time and Money<\/span><\/div>\r\n            <div
+        class=\"chck-lst-body\"><ul><li><strong>Chris<\/strong>: &ldquo;Purple Carrot
+        delivers a box with three vegan meals to prepare a week. The best part is
+        that it comes with a little cookbook each time. I just buy the ingredients
+        later on if I want to make a recipe again. It got me out of a rut of making
+        me the same stuff&hellip;&rdquo;<\/li>\n<li><strong>Stuart<\/strong>: &ldquo;I
+        make my own chicken broth from store-bought rotisserie chickens. I hate using
+        fresh onion, carrot or celery just for broth. I developed the habit of taking
+        scraps of the three when I cook and storing them in a container in the freezer.
+        When I need to make broth, I just dump it into my instant pot with my chicken.
+        Saves time and money.&rdquo;<\/li>\n<li><strong>Teresa:<\/strong> &ldquo;Pay
+        attention to how often your favorite products go on sale and stock up on enough
+        to last you until the next cycle. There is a fairly predictable sales cycle.&rdquo;<\/li>\n<li><strong>Patrick:<\/strong>
+        &ldquo;Instant Pot. Two magic words.&rdquo;<\/li>\n<li><strong>Tonia:<\/strong>
+        &ldquo;If you have the space, get a big box or upright extra freezer. Make
+        massive batches of dishes like taco meat, slow-cooked pork, pot roast, Indian
+        curry, rice dishes of any kind, etc. Batch them into containers so there&rsquo;s
+        no cooking during the week. We do this and order in once a week. We keep fresh
+        broccoli, string beans and cauliflower in large Tupperware containers pre-cut
+        and cleaned and quickly pan-fry or steam them in minutes.&rdquo;<\/li>\n<li><strong>Lisa:<\/strong>
+        &ldquo;Instacart. Restaurant Depot allows you to order from them to your home
+        since the pandemic started. It&rsquo;s basically Costco for restaurants.&rdquo;<\/li>\n<li><strong>Arindam:<\/strong>
+        &ldquo;1-800-DIY.&rdquo;<\/li>\n<li><strong>Kristen:<\/strong> &ldquo;HelloFresh
+        has saved me the headache of what to make and shopping for ingredients.&rdquo;<\/li>\n<li><strong>Diane:<\/strong>
+        &ldquo;Make a big batch of pasta sauce or chili on Sunday, freeze some and
+        eat some throughout the week.&rdquo;<\/li>\n<\/ul><\/div>\r\n          <\/div>\n<h2><strong>The
+        Start of a New Diet<\/strong><\/h2>\n<p>I ordered my first round of Soylent
+        a month ago straight from the website. The package arrived three days later.
+        I opened the box and inside were a dozen white plastic bottles with black
+        caps.<\/p>\n<p>I waited to try one until the next day &mdash; I wanted to
+        start with an empty stomach so I could get the full effect. That morning,
+        I tried my first sip. It was oddly delicious. I was surprised.<\/p>\n<p>Soylent
+        is designed to have a neutral flavor so that the consumer doesn&rsquo;t get
+        sick of the taste. But still, it was slightly sweet. Soylent subtly smells
+        and tastes of a graham cracker and looks like a light cappuccino.<\/p>\n<h2><strong>An
+        Epic Diet Fail<\/strong><\/h2>\n<p>About 20 minutes later, I felt like I had
+        the flu. I ate some &ldquo;real&rdquo; food and the flu-like symptoms disappeared.
+        I tried more Soylent the next day. Same reaction. I tried two more times &mdash;
+        same reaction again.<\/p>\n<p>I drank part of one right before doing 45 minutes
+        of a cardio workout to check my energy levels. Exercising with the actual
+        flu would&rsquo;ve been easier.<\/p>\n<p>I Googled my symptoms. My reaction
+        was very rare. It&rsquo;s most likely the vanillin flavoring was to blame.
+        And with that, my Soylent diet journey came to an abrupt end.<\/p>\n<blockquote><p><strong>Although
+        my experience is negative, I still recommend you give it a try.<\/strong><\/p><\/blockquote>\n<p>I
+        got my mom, dad, and cousin to drink Soylent, and they all really enjoyed
+        it. At least <em>they<\/em> can save time, enjoy better health, and save money.<\/p>\n<p>I&rsquo;ll
+        continue my quest for a meal replacement beverage. So long, Soylent.<\/p>\n<p>Jamie
+        Sullivan, director of communication at Soylent, says: &ldquo;We know many
+        people use our products to save both time and money and are able to do so
+        successfully. However, we <strong>do not recommend <\/strong>anyone switching
+        to a Soylent only diet.&rdquo;<\/p>\n<p>&ldquo;Additionally, we always recommend
+        everyone connect with their doctor or dietitian to decide the best overall
+        meal plan to support your personal health goals and nutrition plan,&rdquo;
+        Sullivan adds.<\/p>\n<p>CentSai does not recommend changing your lifestyle
+        or dietary habits without consulting your physician.<\/p>\n<p><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/save-money\/frugality\/soylent-diet-ups-and-downs\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":80398,"post_template":"infographics","post_title":"[INFOGRAPHIC]
+        Same-Sex and Opposite Sex Couples: By the Numbers","post_content":"<!DOCTYPE
+        html PUBLIC \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p><img loading=\"lazy\" class=\"aligncenter
+        wp-image-80399 size-full\" src=\"https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png\"
+        alt=\"Gay and Straight Couples | Financial Planning\" width=\"767\" height=\"2000\"
+        srcset=\"https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png
+        767w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png
+        222w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png
+        213w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Same-Sex-and-Opposite-Sex-Couples-_-What-Do-the-Stats-Say_-Infographic-767-x-2000-RESIZED.png
+        589w\" sizes=\"(max-width: 767px) 100vw, 767px\"><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/infographic\/gay-couples-vs-straight-couples-infographic\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":80405,"post_template":"column","post_title":"The
+        Best Methodologies for Teaching Financial Literacy","post_content":"<!DOCTYPE
+        html PUBLIC \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p>Financial literacy continues to make slow
+        strides in gaining attention, while discussions of appropriate methodologies
+        in a school setting remain scant. The lack of sufficient attention to methodology
+        has hindered progress; many programs lack meaningful evaluation and longitudinal
+        studies are few.<\/p>\n<p>This creates a circular problem: It is difficult
+        to get support to expand programs when there is a lack of verifiable evidence
+        of their effectiveness, which makes it more difficult to move forward and
+        gain that evidence.<\/p>\n<p>A saving grace is the vast need for financial
+        literacy. Despite sufficient evidence of effectiveness, there is a growing
+        body of evidence of need. Real people are suffering the consequences of financial
+        illiteracy every day. The financial world continues to get more complex and
+        people are visibly getting left behind.<\/p>\n<p><\/p>\n<h2><strong>Financial
+        Literacy Mandates<\/strong><\/h2>\n<p>There continues to be slow progress
+        in the number of states requiring some form of personal financial literacy
+        education as a high school graduation requirement. It&rsquo;s now about half,
+        which is significant, but it is clearly not where we need to be.<\/p>\n<p>Few
+        states, however, require students to take a stand-alone course in personal
+        finance. More require personal finance education integrated with other coursework.
+        Mandates are great, but they don&rsquo;t mean that it actually happens.<\/p>\n<p>It
+        is concerning to see young people graduating high school barely able to read
+        or write; there can be little confidence that they somehow attained reasonable
+        financial literacy education while missing out on reading in schools.<\/p>\n<p>The
+        mandates are not always being followed. Schools face many challenges, and
+        states aren&rsquo;t going to push very hard on getting those who can&rsquo;t
+        read to be good with money. They probably feel they have bigger problems.<\/p>\n<p>State
+        financial literacy education mandates in schools are important but not sufficient.<\/p>\n<h2><strong>The
+        Feedback Challenge<\/strong><\/h2>\n<p>Financial literacy education should
+        make a lifetime of difference. All too often results are either not measured
+        or measured at a point in time. And the focus tends to be on knowledge alone.<\/p>\n<p>Knowledge
+        is important, but financial literacy is a skill; you need to apply it and
+        use it to develop the skill. You learn skills through practicing with knowledge
+        &mdash; both knowledge and experience are required.<\/p>\n<p>It is a lot like
+        welding &mdash; you can read a bunch of books but that does not make you competent
+        with a torch. You need both knowledge and experience to be a good welder,
+        as you need both knowledge and experience to be competent at any skill.<\/p>\n<p>Doesn&rsquo;t
+        matter if it is baking or flying or financial literacy, knowledge does little
+        without experience, and experience can be an expensive and dangerous teacher
+        in the absence of knowledge. They are inseparable; neither has meaningful
+        value alone.<\/p>\n<p><span class=\"aff-cta\"><label>Raising Financially-Smart
+        Kids Made Easy<\/label> An App that can be Managed by Parents<\/span><\/p>\n<p>In
+        a classroom, there are options to develop the skills of financial literacy,
+        just as you would with welding or baking. Financial literacy skills can be
+        developed with cases and games, with interactive tools and with competitions.<\/p>\n<p>Hands-on
+        training provides the learner with a feedback loop. They take an action and
+        a consequence develops. Knowledge training without an experiential component
+        is better than nothing, but it cannot compete with experience.<\/p>\n<p>An
+        ideal situation is directly hands on. Games are a great substitute, but not
+        the only option. Case studies, learning from stories and critiquing the actions
+        of others, even simple exercises can add a hands-on component to knowledge
+        training and improve the likelihood of long-term improvement.<\/p>\n<p>Knowledge
+        has the singular advantage of being easy to test and evaluate. Assessments
+        can measure knowledge gains whereas skill development is harder to evaluate.<\/p>\n<h2><strong>Program
+        Elements<\/strong><\/h2>\n<p>Effective financial literacy education needs
+        to develop several skills. Some are overlooked in knowledge-based programs.<\/p>\n<p>To
+        be financially literate, you need to be able to evaluate financial alternatives.
+        This can be useful in day-to-day activities like comparison shopping and is
+        essential for major purchases.<\/p>\n<p>Financially literate people should
+        be able to compare mortgage options and make a reasonable choice based on
+        their situation and should be able to evaluate choices like leasing a car
+        versus buying a car. Financial decision-making is an essential financial literacy
+        skill.<\/p>\n<p>Using technology in finance is important and growing in importance.
+        There are fantastic tools available to assist individuals in a myriad of financial
+        challenges. But using powerful tools without knowledge of the consequences
+        can be a recipe for disaster.<\/p>\n<p>Students need to not only know how
+        to use technology &mdash; that&rsquo;s the easy part &mdash; but they also
+        need to know when to use technology and what the potential risks are. It is
+        too easy to invest in risky investments with technology.<\/p>\n<blockquote><p><strong>Unfortunately,
+        you can experience negative consequences without even knowing the consequences
+        were possible.<\/strong><\/p><\/blockquote>\n<p>Technology can be wonderful
+        and powerful, or it can be crippling.<\/p>\n<p>Fraud awareness and preventing
+        it needs to be an element of a good financial education. It has been bad out
+        there, and it is getting worse. People need to know how to protect themselves,
+        and where to find out what to watch for as the bad people get better at what
+        they do.<\/p>\n<p><\/p>\n<h2><strong>Behavioral Finance<\/strong><\/h2>\n<p>Behavioral
+        finance can no longer be ignored. In school, individuals need to learn about
+        the behavioral aspects of financial literacy and how to deal with the biggest
+        obstacle they will face on their journey to financial success: themselves.<\/p>\n<p>Money
+        is an emotional topic. Emotions can cause people to make suboptimal decisions.
+        Car dealers know this. You should too.<\/p>\n<p>Students need to learn about
+        the risks behavior brings to the table &mdash; and how to combat those risks.
+        There must be proactive to solutions to deal with our human tendencies, which
+        do not serve us well as long-term accumulators. The more we understand and
+        are aware of our own shortcomings the greater our ability to overcome them
+        and achieve success.<\/p>\n<p>Markets and volatility are not what holds investors
+        back; behaviors in the face of market conditions and volatility are what holds
+        investors back. Behavioral finance is an essential component of financial
+        literacy.<\/p>\n<h2><strong>Systems Thinking<\/strong><\/h2>\n<p>Financial
+        literacy can benefit from systems thinking. Nothing occurs without impacting
+        other things. This is as true in financial matters as it is in any other system.<\/p>\n<p>If
+        you increase your 401(k) contributions, for example, it impacts not only your
+        retirement preparedness, but also your cash flow and your taxes and may impact
+        other areas of your financial life. Any single change has the potential for
+        multiple consequences.<\/p>\n<p>Likewise, financial literacy and financial
+        matters occur within larger systems. An individual&rsquo;s numeracy skills
+        are a codeterminant of their financial capability. Those with low numeracy
+        skills are more likely to struggle financially.<\/p>\n<p>Numeracy education
+        is not financial education, but supports financial education. Those challenged
+        by numeracy need to gain knowledge of and comfort with other tools to assist
+        with numeracy.<\/p>\n<h2><strong>Talk It to Death<\/strong><\/h2>\n<p>A major
+        aim of basic financial literacy programs is to raise awareness while developing
+        rudimentary skills.<\/p>\n<p>We can help. We can help in our families and
+        we can help in our workplaces. And we can help by simply talking it to death.<\/p>\n<p>We
+        can and should talk about financial matters at home. We should talk about
+        budgets and we should talk about the process of evaluating financial alternatives.<\/p>\n<p><span
+        class=\"aff-cta\"><label>Raising Financially-Smart Kids Made Easy<\/label>
+        An App that can be Managed by Parents<\/span><\/p>\n<p>Children who grow up
+        in a home where the parents smoke are more likely to smoke; children who grow
+        up in homes where the parents demonstrate financial awareness and restraint
+        are similarly more likely to pick up these habits.<\/p>\n<p>Don&rsquo;t demonstrate
+        the habits you don&rsquo;t want the kids to pick up, and repeat the habits
+        you would like them to obtain.<\/p>\n<p>Many of us can talk up financial literacy
+        at work. We can be advocates for the 401(k) or other retirement plans. We
+        can be advocates for debt reduction and we can be advocates for emergency
+        funds and we can be advocates for budgets. And we can do that without being
+        obnoxious. People don&rsquo;t like to be told what to do, but they do love
+        stories.<\/p>\n<blockquote><p><strong>If you have a passion for financial
+        literacy or financial wellness, you can share that passion.<\/strong><\/p><\/blockquote>\n<p>You
+        may be surprised not only by how many people are interested, but also that
+        they will make changes and be excited to tell you of their own progress.<\/p>\n<p>Talk
+        it up. Stories are a very powerful teaching tool. Talk it to death.<\/p>\n<h2><strong>The
+        Bottom Line<\/strong><\/h2>\n<p>There is no silver bullet for financial illiteracy.
+        Amazing things are happening, but we still have a long way to go.<\/p>\n<p>Financial
+        literacy is a complex skill and we can spend a lifetime continually learning
+        new things. But we won&rsquo;t if we don&rsquo;t have a solid start. Financial
+        literacy education needs to build the foundation upon which individuals can
+        build the financial lives they wish to have.<\/p>\n<p>We need to keep the
+        idea of skill or capability as a guiding principle. Knowledge of the difference
+        among investment types is nice but evaluating those differences is essential.
+        The skills can be used in changing situations.<\/p>\n<p>There are many tools
+        that can be used to enhance skill-building. Technology continues to help.
+        There are more great videos and simulations and games available every day.
+        There is a lot of power in stories. The more we can talk up financial literacy
+        the bigger difference we can make.<\/p>\n<p>The forum in which we present
+        may constrain the techniques or methodologies we can use, but we can always
+        enhance financial literacy education in schools by making it experiential.
+        That is what people will most carry forward; that is where the difference
+        is made.<\/p>\n<p><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/must-reads\/centsai-sensei\/best-strategies-for-teaching-financial-literacy-in-school\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":29734,"post_template":"column","post_title":"[VIDEO]
+        Frugality Is Not Financial Literacy","post_content":"<!DOCTYPE html PUBLIC
+        \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p>Perusing social media might lead you to
+        believe that frugality is the essence of financial literacy. Not necessarily.
+        Frugal people rarely own airplanes or yachts. The 47 percent of Americans
+        who are financially literate and budget-conscious, according to Harris Insights
+        and Analytics, very well might.<\/p>\n<p>Frugal people focus on not wasting
+        money &mdash; on minimizing their expenses. This can be difficult for low-income
+        households to manage thanks to liquidity restraints, according to a report
+        in the Journal of Marketing Research.<\/p>\n<p><\/p>\n<p>Though those low-income
+        households stand to benefit the most from frugal strategies, such as the ability
+        to buy in bulk, they are unfortunately unable to put those strategies into
+        effect.<\/p>\n<p>Financially literate people, on the other hand, understand
+        the consequences of their financial decisions and act accordingly. They use
+        financial resources intentionally. Financially literate people focus on making
+        good money decisions. And the best decision often isn&rsquo;t the most frugal
+        one.<\/p>\n<h2><strong>Living Within Your Means<\/strong><\/h2>\n<p>The common
+        ground between frugality and financial literacy is living within your means.
+        But the two approaches are quite different.<\/p>\n<p>In the context of doing
+        well financially, living within one&rsquo;s means requires that the sum of
+        one&rsquo;s expenses and savings must be at or below one&rsquo;s income. This
+        principle transcends both ideologies.<\/p>\n<blockquote><p><strong>To be financially
+        successful, one has to live within one&rsquo;s means.<\/strong><\/p><\/blockquote>\n<p><img
+        loading=\"lazy\" class=\"alignleft wp-image-39617 size-medium\" src=\"https:\/\/centsai.com\/wp-content\/uploads\/2017\/09\/Frugality-is-Not-Financial-Literacy-1.png\"
+        alt=\"Frugality is Not Financial Literacy. Yes, it''s right! Many people seem
+        to think that financial literacy means learning to lead a frugal lifestyle.
+        But this is far from the truth. #frugality #frugal #financialliteracy\" width=\"267\"
+        height=\"400\"><\/p>\n<p>This &ldquo;means equation&rdquo; says that we get
+        to spend no more than we make. The frugality camp focuses on minimizing the
+        expenses side of the equation. Unfortunately, neglecting the revenue side
+        can be a big mistake.<\/p>\n<h2><strong>Reducing Expenses vs. Increasing Revenue<\/strong><\/h2>\n<p>It
+        should be fairly apparent that there&rsquo;s more room to change the revenue
+        side of the equation than the expense side &mdash; at least theoretically.
+        Changes to the expense side of the equation are limited to the total of the
+        expenses &mdash; you can&rsquo;t reduce your expenses beyond zero.<\/p>\n<p>The
+        revenue side does not have this barrier. The revenue side is, theoretically,
+        infinitely changeable.<\/p>\n<p><span class=\"aff-cta\"><label>Get Matched
+        With a Financial Adviser Most Suited to Your Unique Needs<\/label> Maximize
+        Your Retirement Efforts Today<\/span><\/p>\n<p>There may be a variety of challenges
+        when it comes to making dramatic increases in the revenue side of the equation.
+        This is especially true in the short term.<\/p>\n<p>Increasing one&rsquo;s
+        income can take a lot of time and hard work. It can also require you to make
+        an intermediate investment, such as getting training or education.<\/p>\n<blockquote><p><strong><em>Meanwhile,
+        frugality &mdash; much like laziness &mdash; pays off immediately.<\/em><\/strong><\/p><\/blockquote>\n<p>This
+        is frugality&rsquo;s great benefit. Frugality as a tool can help us to navigate
+        times of low income, such as a period of unemployment. Frugality can also
+        help us to push out additional savings to meet a short-term goal.<\/p>\n<p>But
+        eventually, a frugal lifestyle often burns us out. Living &ldquo;without&rdquo;
+        robs us of many simple pleasures. It robs us of the emotional peace of enjoying
+        simple things because it makes us believe that we&rsquo;re bad for wasting
+        money on ourselves.<\/p>\n<h2><strong>Frugality vs. Financial Literacy: The
+        Bottom Line<\/strong><\/h2>\n<p>In the long term, we need to tell frugality
+        to pound salt. We need to understand that our self-worth is not equal to the
+        number of pennies saved, and we will buy that damn ice cream if we want. Some
+        of those little expenses contribute to self-care, which is important for our
+        mental and emotional health.<\/p>\n<p>Financial literacy &mdash; making informed
+        and intentional financial decisions &mdash; allows us to do what we want,
+        if we&rsquo;re willing. If we&rsquo;re willing to understand the ramifications
+        of our decisions, then the sky&rsquo;s the limit.<\/p>\n<p>Or the sea&rsquo;s
+        the limit, depending on whether you picked the airplane or the yacht. It&rsquo;s
+        all about decisions.<\/p>\n<p>In the long run, you can have anything that
+        you&rsquo;re willing to earn and build for. Or you can spend less and have
+        what&rsquo;s left over. Frugality is a tool. Financial literacy is the whole
+        tool set.<\/p>\n<p>The ball is in your court. Choose wisely.<\/p>\n<p><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/must-reads\/centsai-sensei\/frugality-not-financial-literacy\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"https:\/\/www.youtube.com\/watch?v=nHFoSrUsEMU","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":80369,"post_template":"infographics","post_title":"[INFOGRAPHIC]
+        Tips for Borrowing Money From or Lending to Family and Friends","post_content":"<!DOCTYPE
+        html PUBLIC \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p><img loading=\"lazy\" class=\"aligncenter
+        wp-image-80379 size-full\" src=\"https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Borrowing-or-Loaning-Money-Infographic-B-VERSION_-Resized-767-x-2000.png\"
+        alt=\"\" width=\"767\" height=\"2000\" srcset=\"https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Borrowing-or-Loaning-Money-Infographic-B-VERSION_-Resized-767-x-2000.png
+        767w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Borrowing-or-Loaning-Money-Infographic-B-VERSION_-Resized-767-x-2000.png
+        222w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Borrowing-or-Loaning-Money-Infographic-B-VERSION_-Resized-767-x-2000.png
+        213w, https:\/\/centsai.com\/wp-content\/uploads\/2021\/04\/Borrowing-or-Loaning-Money-Infographic-B-VERSION_-Resized-767-x-2000.png
+        589w\" sizes=\"(max-width: 767px) 100vw, 767px\"><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/infographic\/borrowing-money-friends-cfpb-infographic\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null},{"post_id":80317,"post_template":"sheventure_podcast","post_title":"Listen:
+        Actionable Tips to Manage Debt With Leslie Tayne","post_content":"<!DOCTYPE
+        html PUBLIC \"-\/\/W3C\/\/DTD HTML 4.0 Transitional\/\/EN\" \"http:\/\/www.w3.org\/TR\/REC-html40\/loose.dtd\">\n<?xml
+        encoding=\"utf-8\" ?><html><body><p style=\"text-align: center;\"><img loading=\"lazy\"
+        class=\"alignnone size-full wp-image-1305\" src=\"https:\/\/sheventures.centsai.com\/wp-content\/uploads\/2021\/04\/IMG_8890_25.png\"
+        alt=\"leslie tayne\" width=\"443\" height=\"248\"><\/p>\n<p><iframe loading=\"lazy\"
+        style=\"border: none;\" src=\"\/\/html5-player.libsyn.com\/embed\/episode\/id\/18238370\/height\/90\/theme\/custom\/thumbnail\/yes\/direction\/backward\/render-playlist\/no\/custom-color\/39008a\/\"
+        width=\"100%\" height=\"90\" scrolling=\"no\" allowfullscreen=\"allowfullscreen\"><\/iframe><\/p>\n<p><span
+        style=\"font-weight: 400;\">To begin Financial Literacy Month on SheVentures,
+        who better than Leslie Tayne to discuss one of America&rsquo;s biggest financial
+        problems: debt, a $14.6T reality for American households.<\/span><\/p>\n<p><span
+        style=\"font-weight: 400;\">Leslie Tayne always knew she wanted to be a lawyer
+        despite her father warning her when she started 20 years ago that it truly
+        was a boys club.<\/span><\/p>\n<p><span style=\"font-weight: 400;\">She tried
+        many facets of the law before she pivoted to what became her passion &mdash;
+        as in-house counsel to a debt company.<\/span><\/p>\n<p><span style=\"font-weight:
+        400;\">Today, The Tayne Law Group is changing the face of debt resolution
+        law. Her mission is to create a more constructive way of handling debt resolution.
+        Tayne is well respected as someone who focuses on the solution and how to
+        educate and engage her clients.<\/span><\/p>\n<p><span style=\"font-weight:
+        400;\">Tayne&rsquo;s &ldquo;open door&rdquo; policy encourages her clients
+        to consult with her team before taking a financial action they may regret
+        later &mdash; such as student loan and credit card debt, decisions on major
+        purchases like buying a new car, or taking out a mortgage. With a focus on
+        financial wellness and working with their clients as a team, Tayne&rsquo;s
+        group points clients in the right direction, even if it&rsquo;s outside their
+        practice. She wants to do what is in their best financial interest.<\/span><\/p>\n<p><span
+        style=\"font-weight: 400;\">Listen to find out what actionable steps you should
+        take if you find yourself in seemingly insurmountable debt &mdash; facing
+        unemployment, the unexpected positives of COVID-19, and the truth behind debt
+        consolidation myths on this episode of SheVentures.<\/span><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/podcast\/sheventures-episode-76-leslie-tayne\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null}],"count":2094,"pages":349}'
+  recorded_at: Sun, 11 Apr 2021 10:20:29 GMT
+recorded_with: VCR 6.0.0

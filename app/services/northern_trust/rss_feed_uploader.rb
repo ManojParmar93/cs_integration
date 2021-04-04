@@ -5,10 +5,10 @@ module NorthernTrust
 
     def call
       file_details = NorthernTrust::PostsDownloader.new().call
-      
+
       unless file_details[:are_items_present]
-        puts "\n\n---No new articles available for Northern Trust---\n\n"
-        return
+        northerntrust_error_massage = "\n\n---No new articles available for Northern Trust---\n\n"
+        return northerntrust_error_massage
       end
 
 
@@ -24,8 +24,9 @@ module NorthernTrust
         acl: :public_read
       )
 
-      puts "https://#{ENV['S3_BUCKET']}.s3.ap-south-1.amazonaws.com/northerntrust/#{file_name}"
       File.delete(file_location)
+      uploaded_file = "https://#{ENV['S3_BUCKET']}.s3.ap-south-1.amazonaws.com/northerntrust/#{file_name}"
+      return uploaded_file
     end
   end
 end

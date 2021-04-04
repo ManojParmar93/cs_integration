@@ -1,0 +1,194 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://app.fmexdirect.com/api/v1/content?accessKey=FMEX-TEST-KEY&content_id=2037
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 11 Apr 2021 10:21:01 GMT
+      server:
+      - Apache/2.4.7 (Ubuntu)
+      x-powered-by:
+      - PHP/5.5.9-1ubuntu4.14
+      set-cookie:
+      - PHPSESSID=8pq5f91ttevl10e04kuj06f6n5; expires=Sun, 11-Apr-2021 22:21:01 GMT;
+        Max-Age=43200; path=/; domain=.fmexdirect.com
+      expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      pragma:
+      - no-cache
+      access-control-allow-orgin:
+      - "*"
+      access-control-allow-methods:
+      - "*"
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: ' {"content_id":"2037","content_title":"Gold, What is it Good For?","content_description":"Given
+        the recent volatility in gold, I think it\u2019s a good time to raise the
+        title question. Why? Because I, for one, have often wondered about the answer.
+        The answer may not be absolutely nothing, as in the Edwin Starr song, but
+        it is a lot less than you might think. The yellow metal has reacted meaningfully
+        during only two incidents in the 44 years since Nixon closed the gold window
+        on August 15, 1971: the 1970s inflation\/oil crisis and the 2000s rise of
+        China\/financial crisis\/debt deflation.","content_file_types":{"docx":"https:\/\/app.fmexdirect.com\/Download\/mDAD3\/docx\/Gold%2C+What+is+it+Good+For%3F.docx","html":"https:\/\/app.fmexdirect.com\/Download\/mDAD3\/html\/Gold%2C+What+is+it+Good+For%3F.html","jpg":"https:\/\/app.fmexdirect.com\/Download\/mDAD3\/jpg\/Gold%2C+What+is+it+Good+For%3F.jpg","pdf":"https:\/\/app.fmexdirect.com\/Download\/mDAD3\/pdf\/Gold%2C+What+is+it+Good+For%3F.pdf"},"content_url":null,"content_word_count":"632","content_category_id":"16","content_date_updated":"2015-11-05
+        16:57:00","content_publisher":{"publisher_id":"5","publisher_name":"RSW Publishing","publisher_url":"http:\/\/www.rswadvertising.com","publisher_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/firm\/4b8fe14d6e3e258e0d318accc64db59f1447699224.png"},"content_author":{"author_id":"1","author_name":"Richard
+        A Gluck","author_url":"https:\/\/globalinvestmentstrategy.wordpress.com\/","author_description":"<p>Richard
+        Gluck is an accomplished global investment professional with proven track
+        records in strategy, portfolio management and client engagement.  As the Chief
+        Fixed Income Strategist for a large private bank, he was a voting member of
+        the Global Investment Strategy Committee, helping set strategic and tactical
+        asset allocation across all asset classes. Richard has successfully managed
+        multi sector bond funds across multiple market cycles. <\/p>\n<p>He ran the
+        #2 and #5 mutual funds of all mutual funds in Canada in 2008, the worst year
+        of the financial crisis.  Richard ran the #1 Short World Income Fund according
+        to Lipper, in 1993.  He has also run US investment grade corporate bond and
+        global high yield bond funds.  Richard began his career as an Assistant Economist
+        in the International Research Department of the Federal Reserve Bank of New
+        York.\n<p>He holds a MS in finance from the MIT Sloan School of Management
+        and a BA in economics, magna cum laude, from SUNY at Buffalo.<\/p>","author_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/author\/349592f29995a32ad955f8f76b0420831457650381.jpg","author_facebook":null,"author_linkedin":"https:\/\/www.linkedin.com\/in\/ragluck","author_twitter":null,"author_website":"https:\/\/globalinvestmentstrategy.wordpress.com\/","author_profile":"https:\/\/app.fmexdirect.com\/6mLyp\/Contributor\/Richard+A+Gluck"},"content_section_id":"1","content_type":"document","content_update_reason":"New","content_section":{"section_id":"1","section_title":"Articles","section_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/sections\/934002f6e4853157c6e351844dab71b21444916429.jpg","section_term":"Categories","section_categories":[{"category_id":"1","category_title":"Business
+        Benefit Planning","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/7465a619493504e736cfe9893fe9712b1445007254.jpg","category_description":"<p>If
+        your client owns a business or is starting a new job, chances are they have
+        questions about different benefits plans. Help them navigate their options
+        with articles that discuss 401(k)s, deferred compensation plans, IRAs, ESOPs,
+        SEPs and more. Then watch as you become their trusted advisor.<\/p>","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/405fa55356937e4f4cfb3162681e83b11504805826.jpg"},{"category_id":"2","category_title":"Business
+        Owners","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/4d11f193df76a607813d779f93578dfd1445007252.jpg","category_description":"Business
+        owners face challenges that most people don\u2019t think about, especially
+        when either starting or exiting a business. Share tips on topics like being
+        your own boss, navigating the challenges with startups and things to consider
+        for succession planning. And grow alongside your clients.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/7b898263438ac46187784cd29e2147eb1504805837.jpg"},{"category_id":"3","category_title":"Business
+        Planning","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/47c5e03401c69ed5f6b78d1a225e385a1445007257.jpg","category_description":"There
+        are about 27 million small businesses in the US employing about half of the
+        workforce. And the range of challenges is varied. Give your clients tips on
+        topics such as how to attract and keep employees, how to build a winning customer
+        service team and how to build a winning website. Your clients will thank you.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/010c6b0f7c2ba326335e605decc1e6561504805843.jpg"},{"category_id":"4","category_title":"Charitable
+        Giving","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/4079564d7dee1818f0b01c739797b1331445007259.jpg","category_description":"Your
+        clients all want to be charitable, but they often make mistakes because they
+        don\u2019t know how. Help them understand the benefits of charitable giving
+        with topics ranging from how to make the most of your gently used clothing
+        to establishing a charitable remainder trust to creating a private foundation.
+        And remember, it\u2019s about your client.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/6de0a8ea8973fc6f82b4b393626310e11504805854.jpg"},{"category_id":"5","category_title":"Economic
+        Concepts","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/4443b2b1265f64336bbbdc19cfa124d41445007266.jpg","category_description":"The
+        United States is the world\u2019s largest economy and is estimated to be approximately
+        $18 trillion, which represents about 20% of the world\u2019s GDP. \nHelp educate
+        your clients with articles that explain the difference between the economy
+        and the markets, the role of the Federal Reserve and other economic concepts
+        that impact their lives. They will appreciate you taking the time to teach
+        them.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/515bc00d48a1b09c69253f0f92cfe45d1504805911.jpg"},{"category_id":"6","category_title":"Education
+        Planning","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/d5bba990b3c758afed3dfbf3bfc7daf01445007268.jpg","category_description":"Educational
+        Planning is so much more than simply saving for college. Help your clients
+        understand topics such as college admission standards, how to ask the right
+        questions of admissions staff and how to prepare their children to accept
+        more responsibility. Because education planning is one of the biggest worries
+        your clients have today.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/09434a661582b57502a4e1ccc2b786cb1504805923.jpg"},{"category_id":"7","category_title":"Estate
+        Planning","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/8a52430dd1c3da1468e8e332fb6fc4231445007271.jpg","category_description":"Many
+        people think that estate planning is only for the wealthy, but that\u2019s
+        simply not true. Everyone needs to plan, otherwise the state where you reside
+        will do it for them. Help your clients understand the basics of estate planning
+        \u2013 wills, power-of-attorney and beneficiary forms \u2013 as well as the
+        more complicated trust options. Because a little planning goes a long way.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/6506441c531c556e6e1fedaac5c684941504805938.jpg"},{"category_id":"8","category_title":"Insurance","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/33505df56cd7dc176a010c7f2280ab741445007315.jpg","category_description":"The
+        insurance industry in the United States is the largest in the world in terms
+        of revenues, exceeding $1.2 trillion. Share articles with your clients so
+        that they better understand their insurance needs and the options available
+        to them. Articles that explain the differences between whole life and term
+        and long-term-care and the unique insurance needs of women.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/d9bc6b7c208a35de817e1a7369b844bb1504805942.jpg"},{"category_id":"9","category_title":"Investing","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/92e7b5ec95454492d257c351925ab55e1445007280.jpg","category_description":"Your
+        clients know the very basics of investing \u2013 start early. But they need
+        help deciphering all the different investment vehicles \u2013 mutual funds,
+        \nseparately managed accounts, IRAs, closed-end funds, variable annuities,
+        CDs and more. Educate your clients on the various options so that they better
+        understand not just the \u201cwhy, but the \u201chow.\u201d Educated clients
+        make the best clients.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/f69b5af5b9e83cedf8339acd5d3b43d81504805948.jpg"},{"category_id":"10","category_title":"Niche
+        Market Development","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/98f69b969a29384e2a28b753d61386061445007284.jpg","category_description":"Developing
+        a niche market is a key to being successful. Because you simply cannot be
+        the best when marketing to the masses. Spend some \ntime defining your niche
+        \u2013 maybe you focus on Millennials or construction workers or those in
+        the food industry. Our articles can help you focus and then provide content
+        geared specifically towards your niche, so you can be the best in your chosen
+        specialty.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/5e9c7d82175db4dc9deb5c1b3bae5bb81504805964.jpg"},{"category_id":"11","category_title":"Personal
+        Finance","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/56fcc4267a3c40ee183f795d0d6bf63a1445007288.jpg","category_description":"All
+        finance is personal. And your clients will face some important financial decisions
+        at least once a year. College, marriage, kids, new job, new house, divorce,
+        and death of a parent \u2013 the list is endless. But sharing articles with
+        your clients at the time they are facing these decisions will position you
+        as relevant. And being relevant is your goal.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/52c96b39bffcdca00a63c91fbf07bd2e1504805967.jpg"},{"category_id":"12","category_title":"Property
+        and Casualty","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/d5ac75a2a712e1f866acf8d901d8d07a1445007291.jpg","category_description":"Property
+        casualty insurance goes by many different names. But the sad truth is that
+        most people don\u2019t understand what\u2019s covered and what\u2019s not.
+        Help your clients better understand where they have insurance gaps \u2013
+        businesses, home, and auto, to name a few. And help them understand what\u2019s
+        not covered.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/805ae4df40871c208a573fd423e0a6af1504805970.jpg"},{"category_id":"13","category_title":"Real
+        Estate","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/7e4238f6aacd58c3332dc5ae556056311445007294.jpg","category_description":"More
+        than 1 in 4 Americans (27 percent) said real estate was the best investment
+        for money they would not need for at least a decade, according to a new Bankrate.com
+        survey of 1,000 investors. And for most, real estate is the largest investment
+        they will ever make. Share articles with your clients about different types
+        of mortgage, tax implications or basic home improvements that might make their
+        investment more profitable over the long-run.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/03c9df3b1308c669d6bcbccbe37b7dc01504805976.jpg"},{"category_id":"14","category_title":"Retirement
+        Planning","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/1be128dff89d4bad8d8eedacab3d32021445007297.jpg","category_description":"Everyone
+        knows the benefits of planning for their retirement. But not everyone has
+        the knowledge on how to actually plan. Share important checklists and articles
+        that discuss how retirement planning is evolving today. The education of your
+        clients will help support the planning you recommend.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/2ecacb7b1ccdd9dba0f4250aa1d61e151504805980.jpg"},{"category_id":"15","category_title":"Tax
+        Planning","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/3df2b5a7df963b51128a33894b7b20921445007300.jpg","category_description":"Your
+        clients are no doubt confused about the tax code. And no wonder, the Tax Code
+        is almost 75,000 pages long. Help teach your clients about the things they
+        need to know \u2013 the alternative minimum tax, allowable deductions, child
+        care credits \u2013 the things they actually care about. Otherwise, they would
+        have to read more than 200 pages each day for a year \u2013 and then the Tax
+        Code will change again and they will have to start over.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/3f6f5ddaf3842f69fb20b16834117d0a1504805992.jpg"},{"category_id":"16","category_title":"Editorial
+        Highlights","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/6c350adbdc0b552d2e653087a254bbef1445007307.jpg","category_description":"The
+        Editorial team creates relevant, timely content based on current events in
+        the financial world.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/d676a6bcc66e4c6fc52eadb9286e0fb91504805917.jpg"},{"category_id":"144","category_title":"Investment
+        Memes","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/b2a7d4ee182855305821b58b3d7eb5d91504806122.jpg","category_description":"Investment
+        themed Memes","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/b2a7d4ee182855305821b58b3d7eb5d91504805954.jpg"},{"category_id":"174","category_title":"Career
+        Management","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/56e2c3ae44ac2923580aaeba2a5a6d441493131431.jpg","category_description":"","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/064250ceab0e587fb6941ed9ad0a502a1504805848.jpg"},{"category_id":"175","category_title":"College
+        Funding","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/43e2a4fa2197ae9c3fcae0e1864458851493131523.jpg","category_description":"","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/996b82f28fd549ba611e8a4e031addf71504805857.jpg"},{"category_id":"176","category_title":"Crime","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/681ca5b670a5427d1060bc17df0883a31493131526.jpg","category_description":"","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/dfdf0c28d930dae8086623379eb660391504805863.jpg"},{"category_id":"177","category_title":"Dealing
+        With Financial Advisors","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/f25d789812bbd6c85d94ce75664832671493131528.jpg","category_description":"","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/5f1408d0084adf9237e27ee68dfd3a5f1504805865.jpg"},{"category_id":"178","category_title":"Elder
+        Care","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/7d4c448339b2547251fe579a67fbd2991493131532.jpg","category_description":"","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/c4e12e7ba48a116eba9be996befc65f41504805929.jpg"},{"category_id":"180","category_title":"International","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/dcda344d5402028d4f1d7f4238cbad981493131534.jpg","category_description":"","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/57b5272baaa93b58146c37366cec22bc1504805945.jpg"},{"category_id":"181","category_title":"Legal
+        Challenges","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/90ab67b7523dbcd5ce0a63a78765ece31493131538.jpg","category_description":"","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/598bc5cff493d9f373219ad9882528c61504805961.jpg"},{"category_id":"182","category_title":"Quality
+        of Life","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/41b71d6359d0474b734124e4efabc7821493131546.jpg","category_description":"","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/f898c0ea945da8eb083f918b596e86891504805972.jpg"},{"category_id":"242","category_title":"Spanish
+        Versions","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/ffc22ad9628da3a2d5d1a46a2674527f1616604964.jpg","category_description":"Our
+        Quarterly Newsletters will now be available in Spanish.  We plan on posting
+        the Spanish version 3 -days after our general newsletter release.\r\nNuestros
+        boletines trimestrales ahora estar\u00e1n disponibles en espa\u00f1ol. Planeamos
+        publicar la versi\u00f3n en espa\u00f1ol 3 d\u00edas despu\u00e9s del lanzamiento
+        de nuestro bolet\u00edn general. ","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/77cbc49e6f58ac7edf6d4a55b36359df1617819746.jpg"},{"category_id":"244","category_title":"401(k)","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/869091ba3bf77aa6b2280db89de2dc5d1617820139.jpg","category_description":"A
+        401(k) is a retirement savings and investing plan that employers offer. A
+        401(k) plan gives employees a tax break on money they contribute. Contributions
+        are automatically withdrawn from employee paychecks and invested in funds
+        of the employee\u2019s choosing (from a list of available offerings).","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/96f253c61cf11318295ef4197753ef761617820148.jpg"},{"category_id":"245","category_title":"Long
+        Term Care","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/0a2aab3803581b8b32fc8967066cb2841617835594.jpg","category_description":"The
+        best time to think about long-term care is before you need it. Planning for
+        the possibility of long-term care gives you time to learn about services in
+        your community and what they cost. It also allows you to make important decisions
+        while you are still able.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/9bd2a7429a908fb98cbd02e89350556f1617835599.jpg"},{"category_id":"246","category_title":"Annuity","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/97e66608de1e4db5ba6586c72fa9ce9a1617838131.jpg","category_description":"A
+        popular financial product that pays out a fixed stream of payments to an individual,
+        and these financial products are primarily used as an income stream for retirees.
+        Annuities are contracts issued and distributed (or sold) by financial institutions,
+        which invest funds from individuals.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/b4ebd4cbe155feae474e7f39f24692121617838134.jpg"},{"category_id":"247","category_title":"Asset
+        Allocation","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/88485ca862256a2e076e82bf986ff6c91617838410.jpg","category_description":"A
+        popular financial product that pays out a fixed stream of payments to an individual,
+        and these financial products are primarily used as an income stream for retirees.
+        Annuities are contracts issued and distributed (or sold) by financial institutions,
+        which invest funds from individuals.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/2aa9ddcc2e1eee57088f372e483699191617838443.jpg"},{"category_id":"249","category_title":"Market
+        Insights","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/b9810ca7f3812972963c7b04fd8de3951618051125.jpg","category_description":"","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/16262297b325b6151708cff42c56b8ac1618051131.jpg"}],"section_header_image":"https:\/\/cdn.fmexdirect.com\/images\/sections\/f133a77154a0b22056d9721ec24f78c51504808604.jpg","section_url":"https:\/\/app.fmexdirect.com\/Content-Library\/Articles\/6mLyp\/"},"content_category":{"category_id":"16","category_title":"Editorial
+        Highlights","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/6c350adbdc0b552d2e653087a254bbef1445007307.jpg","category_description":"The
+        Editorial team creates relevant, timely content based on current events in
+        the financial world.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/d676a6bcc66e4c6fc52eadb9286e0fb91504805917.jpg"},"preview":"https:\/\/app.fmexdirect.com\/Download-Image\/mDAD3\/preview.jpg","content_generation":["Millennial"],"social_share_240x140":"https:\/\/app.fmexdirect.com\/Download-Image\/mDAD3\/social_share_240x140.jpg"}'
+  recorded_at: Sun, 11 Apr 2021 10:21:02 GMT
+recorded_with: VCR 6.0.0
