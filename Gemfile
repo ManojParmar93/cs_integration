@@ -31,6 +31,7 @@ gem 'faraday'
 gem 'rss'
 gem 'aws-sdk', '< 2'
 gem 'builder', '~> 3.2', '>= 3.2.2'
+gem 'whenever', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
