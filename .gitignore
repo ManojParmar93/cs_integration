@@ -17,7 +17,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+.rspec
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
 !/tmp/pids/
