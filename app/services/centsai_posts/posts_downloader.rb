@@ -24,30 +24,12 @@ module CentsaiPosts
 
     def http_connection
       conn = Faraday.new(url: CENTSAI_POSTS_URI)
-      conn.basic_auth('apiuser@vestorly.com', 'Vestorly@CentSaiAPI!')
+      conn.basic_auth(ENV['USERNAME'], ENV['PASSWORD'])
       conn
     end
 
-    def make_feed
-        xml = Builder::XmlMarkup.new
-        xml.instruct!(:xml, version: '1.0', encoding: 'UTF-8')
-        xml.rss(
-          version: 2.0,
-          'xmlns:content' => 'http://purl.org/rss/1.0/modules/content/',
-          'xmlns:dc' => 'http://purl.org/dc/elements/1.1/',
-          'xmlns:media' => 'http://search.yahoo.com/mrss/'
-        ) do |_|
-          xml.channel do |channel|
-            make_channel(channel)
-          end
-        end
-      end
-
     private
-
-      # updated code 31 March
-
-      def make_feed # rubocop:disable MethodLength
+      def make_feed
         xml = Builder::XmlMarkup.new
         xml.instruct!(:xml, version: '1.0', encoding: 'UTF-8')
         xml.rss(
@@ -78,7 +60,7 @@ module CentsaiPosts
         end
       end
 
-      def make_item(item, article) # rubocop:disable MethodLength, AbcSize
+      def make_item(item, article)
         item.guid article[:post_id]
         item.title article[:post_title]
         item.pubDate Time.zone.parse(
@@ -89,13 +71,6 @@ module CentsaiPosts
           dc.text! article[:author_name]
         end if article[:author_name].present?
         item.description ActionView::Base.full_sanitizer.sanitize(article[:post_content])
-        # Note that RSS 2.0 spec
-        # does not validate with HTTPS.
-        # These URLs are HTTPS from
-        # the Dow Jones API.
-        # https://github.com/rubys/feedvalidator/issues/16
-        # This is why enclosure was not used.
-        # FeedJira will pick this up.
         item.media(
           :content,
           url: article[:post_url],
