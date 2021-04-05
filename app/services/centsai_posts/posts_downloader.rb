@@ -24,7 +24,7 @@ module CentsaiPosts
 
     def http_connection
       conn = Faraday.new(url: CENTSAI_POSTS_URI)
-      conn.basic_auth(ENV['USERNAME'], ENV['PASSWORD'])
+      conn.basic_auth(ENV['USER_NAME'], ENV['PASSWORD'])
       conn
     end
 
