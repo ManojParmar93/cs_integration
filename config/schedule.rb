@@ -14,7 +14,9 @@
 # end
 #
 every 1.hours do
-  # runner "AnotherModel.prune_old_records"
+	CentsaiPosts::RssFeedUploader.new().call
+	FmexDirect::RssFeedUploader.new().call
+	NorthernTrust::RssFeedUploader.new().call
 end
 
 # Learn more: http://github.com/javan/whenever
