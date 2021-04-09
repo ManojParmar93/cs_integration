@@ -7,9 +7,16 @@ module CentsaiPosts
     CENTSAI_POSTS_URI = 'https://centsai.com/api/centsai-api.php'
 
     def initialize(channel_data = {})
-      articles = get_posts["posts"]
+      articles = get_posts["posts"].select{|article| valid_item?(article['post_id'])}
       @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
+      @file_name = "post_#{Time.now.to_i}.rss"
       @channel_data = {}
+    end
+
+    def call
+      {xml_rss_feed: xml_rss_feed, 
+        are_items_present: @articles.present?,
+        file_name: @file_name}
     end
 
     def xml_rss_feed
@@ -95,6 +102,11 @@ module CentsaiPosts
       def get_posts
         response = http_connection.get()
         JSON.parse(response.body)
+      end
+
+      def valid_item?(guid)
+        return false if ArticleItem.centsai.find_by(guid: guid)
+        ArticleItem.centsai.create(guid: guid)
       end
   end
 end

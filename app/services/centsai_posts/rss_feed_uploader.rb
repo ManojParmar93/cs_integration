@@ -4,8 +4,13 @@ module CentsaiPosts
     end
 
     def call
-      file_content = CentsaiPosts::PostsDownloader.new().xml_rss_feed
-      file_name = "post_#{Time.now.to_i}.rss"
+      centsai_details = CentsaiPosts::PostsDownloader.new().call
+      unless centsai_details[:are_items_present]
+        puts "\n\n---No new articles available for centsai---\n\n"
+        return 
+      end
+      file_content = centsai_details[:xml_rss_feed]
+      file_name = centsai_details[:file_name]
       file_location = "public/centsai/#{file_name}"
       File.open(file_location, 'a+') {|f| f.write(file_content) }
 
