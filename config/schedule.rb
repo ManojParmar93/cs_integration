@@ -6,6 +6,8 @@
 # Example:
 #
 # set :output, "/path/to/my/cron_log.log"
+set :output, { error: 'error.log', standard: 'cron.log' }
+
 #
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
@@ -13,10 +15,8 @@
 #   rake "some:great:rake:task"
 # end
 #
-every 1.hours do
-	CentsaiPosts::RssFeedUploader.new().call
-	FmexDirect::RssFeedUploader.new().call
-	NorthernTrust::RssFeedUploader.new().call
+every 2.minutes do
+	runner "CentsaiPostWorker.perform_async"
 end
 
 # Learn more: http://github.com/javan/whenever
