@@ -6,7 +6,7 @@ module CentsaiPosts
     include ApplicationHelper
     CENTSAI_POSTS_URI = 'https://centsai.com/api/centsai-api.php'
 
-    def initialize
+    def initialize(channel_data = {})
       articles = get_posts["posts"]
       @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
       @channel_data = {}
@@ -70,7 +70,7 @@ module CentsaiPosts
         item.dc(:creator) do |dc|
           dc.text! article[:author_name]
         end if article[:author_name].present?
-        item.description ActionView::Base.full_sanitizer.sanitize(article[:post_content])
+        item.description remove_html_content(article[:post_content])
         item.media(
           :content,
           url: article[:post_url],
@@ -82,13 +82,13 @@ module CentsaiPosts
             role: 'photographer',
             scheme: 'urn:ebu'
           ) do |media_credit|
-            media_credit.text! article[:image_credit]
-          end if article[:image_credit].present?
-        end if article[:image_url].present?
+            media_credit.text! article[:author_image]
+          end if article[:author_image].present?
+        end if article[:post_image].present?
         # https://developer.mozilla.org/en-US/docs/Web/RSS/
         # Article/Why_RSS_Content_Module_is_Popular_-_Including_HTML_Contents
         item.content(:encoded) do |content|
-          content.cdata!(ActionView::Base.full_sanitizer.sanitize(article[:post_content]))
+          content.cdata!(remove_html_content(article[:post_content]))
         end
       end
 
