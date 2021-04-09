@@ -6,9 +6,20 @@ module NorthernTrust
     NORTHERNTRUST_POSTS_URI = "https://www.northerntrust.com/api/gridSearch?&query=*&filterString=%5b%7B%22name%22%3A%22publications%22%2C%22values%22%3A%5B%22*%22%5D%7D%5d&region=united-states&start=1&pageSize=9"
 
     def initialize
-      articles = get_posts['results']
-      @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
+      articles = get_posts['results'].select do |article| 
+        valid_item? "#{article['url']}#{['articleDate']}"
+      end
+      @articles = articles.collect do |article| 
+        HashWithIndifferentAccess.new(article)
+      end
+      @file_name = "post_#{Time.now.to_i}.rss"
       @channel_data = {}
+    end
+
+    def call
+      {xml_rss_feed: xml_rss_feed, 
+        are_items_present: @articles.present?,
+        file_name: @file_name}
     end
 
     def xml_rss_feed
@@ -121,6 +132,11 @@ module NorthernTrust
       def get_posts
         response = http_connection.get()
         JSON.parse(response.body)
+      end
+
+      def valid_item?(guid)
+        return false if ArticleItem.northern_trust.find_by(guid: guid)
+        ArticleItem.northern_trust.create(guid: guid)
       end
   end
 end

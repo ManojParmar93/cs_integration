@@ -5,6 +5,13 @@ module FmexDirect
 
     def call
       file_details = FmexDirect::PostsDownloader.new().call
+
+      unless file_details[:are_items_present]
+        puts "\n\n---No new articles available for Fmex Direct---\n\n"
+        return
+      end
+
+
       file_content = file_details[:xml_rss_feed]
       file_name = file_details[:file_name]
       file_location = "public/fmax_direct/#{file_name}"

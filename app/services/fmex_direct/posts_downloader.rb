@@ -11,7 +11,9 @@ module FmexDirect
       @author_details = post_response['content_author']
       @published_at = Time.zone.parse(post_response['content_date_updated']) rescue Time.now
       @file_name = "#{post_response['content_title'].downcase.split('').select{|char| char == ' ' || VALID_FILE_NAME_CHARACTERS.include?(char)}.join('').gsub(' ', '_')}.rss"
-      articles = post_response['content_section']['section_categories']
+      articles = post_response['content_section']['section_categories'].select do |article|
+        valid_item?(article['category_id'])
+      end
       @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
       @channel_data = {title: post_response['content_title'],
         link: post_response['content_publisher']&.try(:[], 'publisher_url'),
@@ -19,7 +21,9 @@ module FmexDirect
     end
 
     def call
-      {xml_rss_feed: xml_rss_feed, file_name: @file_name}
+      {xml_rss_feed: xml_rss_feed, 
+        are_items_present: @articles.present?,
+        file_name: @file_name}
     end
 
     def xml_rss_feed
@@ -126,6 +130,11 @@ module FmexDirect
       def get_posts
         response = http_connection.get()
         JSON.parse(response.body)
+      end
+
+      def valid_item?(guid)
+        return false if ArticleItem.fmex_direct.find_by(guid: guid)
+        ArticleItem.fmex_direct.create(guid: guid)
       end
   end
 end

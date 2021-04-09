@@ -4,8 +4,16 @@ module NorthernTrust
     end
 
     def call
-      file_content = NorthernTrust::PostsDownloader.new().xml_rss_feed
-      file_name = "post_#{Time.now.to_i}.rss"
+      file_details = NorthernTrust::PostsDownloader.new().call
+      
+      unless file_details[:are_items_present]
+        puts "\n\n---No new articles available for Northern Trust---\n\n"
+        return
+      end
+
+
+      file_content = file_details[:xml_rss_feed]
+      file_name = file_details[:file_name]
       file_location = "public/northerntrust/#{file_name}"
       File.open(file_location, 'a+') {|f| f.write(file_content) }
 
