@@ -16,11 +16,12 @@ module CentsaiPosts
 
       bucket = S3_BUCKET.objects["centsai/#{file_name}"]
       bucket.write(
+        region: 'us-east-1',
         file: file_location,
         acl: :public_read
       )
       puts "https://#{ENV['S3_BUCKET']}.s3.ap-south-1.amazonaws.com/centsai/#{file_name}"
-      File.delete(file_location)
+      # File.delete(file_location)
     end
   end
 end

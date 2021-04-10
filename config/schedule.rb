@@ -6,7 +6,7 @@
 # Example:
 #
 # set :output, "/path/to/my/cron_log.log"
-set :output, { error: 'error.log', standard: 'cron.log' }
+set :output, { error: 'log/error.log', standard: 'log/cron.log' }
 
 #
 # every 2.hours do
@@ -15,7 +15,7 @@ set :output, { error: 'error.log', standard: 'cron.log' }
 #   rake "some:great:rake:task"
 # end
 #
-every 2.minutes do
+every 45.minutes do
 	runner "CentsaiPostWorker.perform_async"
 end
 
