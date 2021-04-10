@@ -33,6 +33,7 @@ gem 'aws-sdk', '< 2'
 gem 'builder', '~> 3.2', '>= 3.2.2'
 gem 'whenever', require: false
 gem 'sidekiq'
+gem 'rails-html-sanitizer'
 
 
 group :development, :test do
