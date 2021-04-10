@@ -6,6 +6,8 @@ require File.expand_path('../config/environment', __dir__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 require 'support/vcr_setup'
+require 'simplecov'
+SimpleCov.start
 # Add additional requires below this line. Rails is not loaded until this point!
 # config.cassette_library_dir = "spec/fixtures/vcr_cassetes"
 # Requires supporting ruby files with custom matchers and macros, etc, in
