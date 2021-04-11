@@ -63,6 +63,7 @@ group :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
+  gem 'rspec-sidekiq'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
