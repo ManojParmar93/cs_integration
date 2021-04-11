@@ -15,13 +15,13 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Sun, 11 Apr 2021 09:54:42 GMT
+      - Sun, 11 Apr 2021 10:20:54 GMT
       server:
       - Apache/2.4.7 (Ubuntu)
       x-powered-by:
       - PHP/5.5.9-1ubuntu4.14
       set-cookie:
-      - PHPSESSID=t9kg9kb2p58gfimhih0bsu0lq0; expires=Sun, 11-Apr-2021 21:54:42 GMT;
+      - PHPSESSID=kalffjpl1hqbhtj0ql73fp3ig2; expires=Sun, 11-Apr-2021 22:20:54 GMT;
         Max-Age=43200; path=/; domain=.fmexdirect.com
       expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
@@ -190,7 +190,7 @@ http_interactions:
         Highlights","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/6c350adbdc0b552d2e653087a254bbef1445007307.jpg","category_description":"The
         Editorial team creates relevant, timely content based on current events in
         the financial world.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/d676a6bcc66e4c6fc52eadb9286e0fb91504805917.jpg"},"preview":"https:\/\/app.fmexdirect.com\/Download-Image\/mDAD3\/preview.jpg","content_generation":["Millennial"],"social_share_240x140":"https:\/\/app.fmexdirect.com\/Download-Image\/mDAD3\/social_share_240x140.jpg"}'
-  recorded_at: Sun, 11 Apr 2021 09:54:42 GMT
+  recorded_at: Sun, 11 Apr 2021 10:20:55 GMT
 - request:
     method: put
     uri: https://<<S3_BUCKET>>.s3.ap-south-1.amazonaws.com/fmax_direct/gold_what_is_it_good_for.rss
@@ -214,13 +214,13 @@ http_interactions:
       Host:
       - "<<S3_BUCKET>>.s3.ap-south-1.amazonaws.com"
       X-Amz-Date:
-      - 20210411T095443Z
+      - 20210411T102055Z
       X-Amz-Content-Sha256:
       - edc20072a29fff1739ed24b808451e5dbb4063a6b498d2a71c66b9be60a7b0ad
       Authorization:
       - AWS4-HMAC-SHA256 Credential=<<AWS_ACCESS_KEY_ID>>/20210411/ap-south-1/s3/aws4_request,
         SignedHeaders=content-length;expect;host;user-agent;x-amz-acl;x-amz-content-sha256;x-amz-date,
-        Signature=49ff104a7b5ad8343e6300ae8682072bcfc87ac7c824ff71441c8d3708813f8b
+        Signature=bd80f642f688f7a497921d6fb2508a297bbeeecb92760c430b7f440d68b76af8
       Accept:
       - "*/*"
   response:
@@ -229,11 +229,11 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - W6jAoJ9IgA6BUGS3MehXIn0GqRXurKEjXeEZQj7lC8pTYWe7d1sef3kGxuTDMY5BAofHpyqSuFo=
+      - Yyu9oWS4SzeS0jLkm3ryQ0SySS4u4lvXZ/AmpodaeMN9nOQFv2GG/YK2o0VSh7Ev8kP38KfKr/E=
       X-Amz-Request-Id:
-      - 49JPR7YYZGYJTYBZ
+      - FX5E6ZJ832SDJZAJ
       Date:
-      - Sun, 11 Apr 2021 09:54:44 GMT
+      - Sun, 11 Apr 2021 10:20:56 GMT
       Etag:
       - '"642426ae081870582b17ad70f37c5564"'
       Content-Length:
@@ -243,5 +243,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Sun, 11 Apr 2021 09:54:43 GMT
+  recorded_at: Sun, 11 Apr 2021 10:20:55 GMT
 recorded_with: VCR 6.0.0

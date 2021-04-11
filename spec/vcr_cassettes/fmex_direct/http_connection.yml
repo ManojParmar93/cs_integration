@@ -14,29 +14,29 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      access-control-allow-methods:
-      - "*"
-      access-control-allow-orgin:
-      - "*"
-      cache-control:
-      - no-store, no-cache, must-revalidate
-      content-type:
-      - application/json
       date:
-      - Sat, 10 Apr 2021 09:34:08 GMT
+      - Sun, 11 Apr 2021 10:20:46 GMT
+      server:
+      - Apache/2.4.7 (Ubuntu)
+      x-powered-by:
+      - PHP/5.5.9-1ubuntu4.14
+      set-cookie:
+      - PHPSESSID=h0e6thr2b4uvnl2rldu9gfqu74; expires=Sun, 11-Apr-2021 22:20:46 GMT;
+        Max-Age=43200; path=/; domain=.fmexdirect.com
       expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
       pragma:
       - no-cache
-      server:
-      - Apache/2.4.46 () OpenSSL/1.0.2k-fips
-      set-cookie:
-      - PHPSESSID=b5pd17ieihv59s341alnc87pup; expires=Sat, 10-Apr-2021 21:34:09 GMT;
-        Max-Age=43200; path=/
-      content-length:
-      - '21116'
-      connection:
-      - keep-alive
+      access-control-allow-orgin:
+      - "*"
+      access-control-allow-methods:
+      - "*"
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
     body:
       encoding: UTF-8
       string: ' {"content_id":"2037","content_title":"Gold, What is it Good For?","content_description":"Given
@@ -186,11 +186,11 @@ http_interactions:
         and these financial products are primarily used as an income stream for retirees.
         Annuities are contracts issued and distributed (or sold) by financial institutions,
         which invest funds from individuals.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/2aa9ddcc2e1eee57088f372e483699191617838443.jpg"},{"category_id":"249","category_title":"Market
-        Insights","category_image":null,"category_description":"","category_header_image":null}],"section_header_image":"https:\/\/cdn.fmexdirect.com\/images\/sections\/f133a77154a0b22056d9721ec24f78c51504808604.jpg","section_url":"https:\/\/app.fmexdirect.com\/Content-Library\/Articles\/6mLyp\/"},"content_category":{"category_id":"16","category_title":"Editorial
+        Insights","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/b9810ca7f3812972963c7b04fd8de3951618051125.jpg","category_description":"","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/16262297b325b6151708cff42c56b8ac1618051131.jpg"}],"section_header_image":"https:\/\/cdn.fmexdirect.com\/images\/sections\/f133a77154a0b22056d9721ec24f78c51504808604.jpg","section_url":"https:\/\/app.fmexdirect.com\/Content-Library\/Articles\/6mLyp\/"},"content_category":{"category_id":"16","category_title":"Editorial
         Highlights","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/6c350adbdc0b552d2e653087a254bbef1445007307.jpg","category_description":"The
         Editorial team creates relevant, timely content based on current events in
         the financial world.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/d676a6bcc66e4c6fc52eadb9286e0fb91504805917.jpg"},"preview":"https:\/\/app.fmexdirect.com\/Download-Image\/mDAD3\/preview.jpg","content_generation":["Millennial"],"social_share_240x140":"https:\/\/app.fmexdirect.com\/Download-Image\/mDAD3\/social_share_240x140.jpg"}'
-  recorded_at: Sat, 10 Apr 2021 09:34:09 GMT
+  recorded_at: Sun, 11 Apr 2021 10:20:47 GMT
 - request:
     method: get
     uri: https://app.fmexdirect.com/api/v1/content?accessKey=FMEX-TEST-KEY&content_id=2037
@@ -205,29 +205,29 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      access-control-allow-methods:
-      - "*"
-      access-control-allow-orgin:
-      - "*"
-      cache-control:
-      - no-store, no-cache, must-revalidate
-      content-type:
-      - application/json
       date:
-      - Sat, 10 Apr 2021 09:34:10 GMT
+      - Sun, 11 Apr 2021 10:20:47 GMT
+      server:
+      - Apache/2.4.7 (Ubuntu)
+      x-powered-by:
+      - PHP/5.5.9-1ubuntu4.14
+      set-cookie:
+      - PHPSESSID=4quj2uf6p4oj2v4itf96r40rs1; expires=Sun, 11-Apr-2021 22:20:47 GMT;
+        Max-Age=43200; path=/; domain=.fmexdirect.com
       expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
+      cache-control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
       pragma:
       - no-cache
-      server:
-      - Apache/2.4.46 () OpenSSL/1.0.2k-fips
-      set-cookie:
-      - PHPSESSID=a8lnc1qc9j34m3hi7q5n39aea8; expires=Sat, 10-Apr-2021 21:34:10 GMT;
-        Max-Age=43200; path=/
-      content-length:
-      - '21116'
-      connection:
-      - keep-alive
+      access-control-allow-orgin:
+      - "*"
+      access-control-allow-methods:
+      - "*"
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
     body:
       encoding: UTF-8
       string: ' {"content_id":"2037","content_title":"Gold, What is it Good For?","content_description":"Given
@@ -377,9 +377,9 @@ http_interactions:
         and these financial products are primarily used as an income stream for retirees.
         Annuities are contracts issued and distributed (or sold) by financial institutions,
         which invest funds from individuals.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/2aa9ddcc2e1eee57088f372e483699191617838443.jpg"},{"category_id":"249","category_title":"Market
-        Insights","category_image":null,"category_description":"","category_header_image":null}],"section_header_image":"https:\/\/cdn.fmexdirect.com\/images\/sections\/f133a77154a0b22056d9721ec24f78c51504808604.jpg","section_url":"https:\/\/app.fmexdirect.com\/Content-Library\/Articles\/6mLyp\/"},"content_category":{"category_id":"16","category_title":"Editorial
+        Insights","category_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/b9810ca7f3812972963c7b04fd8de3951618051125.jpg","category_description":"","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/16262297b325b6151708cff42c56b8ac1618051131.jpg"}],"section_header_image":"https:\/\/cdn.fmexdirect.com\/images\/sections\/f133a77154a0b22056d9721ec24f78c51504808604.jpg","section_url":"https:\/\/app.fmexdirect.com\/Content-Library\/Articles\/6mLyp\/"},"content_category":{"category_id":"16","category_title":"Editorial
         Highlights","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/6c350adbdc0b552d2e653087a254bbef1445007307.jpg","category_description":"The
         Editorial team creates relevant, timely content based on current events in
         the financial world.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/d676a6bcc66e4c6fc52eadb9286e0fb91504805917.jpg"},"preview":"https:\/\/app.fmexdirect.com\/Download-Image\/mDAD3\/preview.jpg","content_generation":["Millennial"],"social_share_240x140":"https:\/\/app.fmexdirect.com\/Download-Image\/mDAD3\/social_share_240x140.jpg"}'
-  recorded_at: Sat, 10 Apr 2021 09:34:10 GMT
+  recorded_at: Sun, 11 Apr 2021 10:20:48 GMT
 recorded_with: VCR 6.0.0

@@ -15,13 +15,13 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Sun, 11 Apr 2021 09:39:49 GMT
+      - Sun, 11 Apr 2021 10:21:01 GMT
       server:
       - Apache/2.4.7 (Ubuntu)
       x-powered-by:
       - PHP/5.5.9-1ubuntu4.14
       set-cookie:
-      - PHPSESSID=qguhnlf4qrb0vmclo1q6cb44n5; expires=Sun, 11-Apr-2021 21:39:49 GMT;
+      - PHPSESSID=8pq5f91ttevl10e04kuj06f6n5; expires=Sun, 11-Apr-2021 22:21:01 GMT;
         Max-Age=43200; path=/; domain=.fmexdirect.com
       expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
@@ -190,5 +190,5 @@ http_interactions:
         Highlights","category_image":"https:\/\/d3ce4muptcumk4.cloudfront.net\/images\/categories\/6c350adbdc0b552d2e653087a254bbef1445007307.jpg","category_description":"The
         Editorial team creates relevant, timely content based on current events in
         the financial world.","category_header_image":"https:\/\/cdn.fmexdirect.com\/images\/categories\/d676a6bcc66e4c6fc52eadb9286e0fb91504805917.jpg"},"preview":"https:\/\/app.fmexdirect.com\/Download-Image\/mDAD3\/preview.jpg","content_generation":["Millennial"],"social_share_240x140":"https:\/\/app.fmexdirect.com\/Download-Image\/mDAD3\/social_share_240x140.jpg"}'
-  recorded_at: Sun, 11 Apr 2021 09:39:49 GMT
+  recorded_at: Sun, 11 Apr 2021 10:21:02 GMT
 recorded_with: VCR 6.0.0

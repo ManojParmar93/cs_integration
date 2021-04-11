@@ -19,7 +19,7 @@ http_interactions:
       server:
       - nginx
       date:
-      - Sat, 10 Apr 2021 09:08:41 GMT
+      - Sun, 11 Apr 2021 10:20:26 GMT
       content-type:
       - application/json; charset=UTF-8
       transfer-encoding:
@@ -386,7 +386,7 @@ http_interactions:
         take if you find yourself in seemingly insurmountable debt &mdash; facing
         unemployment, the unexpected positives of COVID-19, and the truth behind debt
         consolidation myths on this episode of SheVentures.<\/span><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/podcast\/sheventures-episode-76-leslie-tayne\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null}],"count":2094,"pages":349}'
-  recorded_at: Sat, 10 Apr 2021 09:08:42 GMT
+  recorded_at: Sun, 11 Apr 2021 10:20:27 GMT
 - request:
     method: get
     uri: https://centsai.com/api/centsai-api.php
@@ -406,7 +406,7 @@ http_interactions:
       server:
       - nginx
       date:
-      - Sat, 10 Apr 2021 09:08:43 GMT
+      - Sun, 11 Apr 2021 10:20:28 GMT
       content-type:
       - application/json; charset=UTF-8
       transfer-encoding:
@@ -773,5 +773,5 @@ http_interactions:
         take if you find yourself in seemingly insurmountable debt &mdash; facing
         unemployment, the unexpected positives of COVID-19, and the truth behind debt
         consolidation myths on this episode of SheVentures.<\/span><\/p><\/body><\/html>\n","post_image":null,"post_url":null,"canonical_url":"https:\/\/centsai.com\/podcast\/sheventures-episode-76-leslie-tayne\/","post_date":null,"six_second_take":null,"author_id":null,"author_name":null,"author_url":null,"author_image":null,"category_id":null,"category_name":null,"category_link":null,"sponsored_content":null,"sponsored_image":null,"sponsored_url":null,"video_url":"","podcast_url":"","featured_partner":null,"featured_partner_url":null,"featured_part_desc":null,"featured_part_img":null}],"count":2094,"pages":349}'
-  recorded_at: Sat, 10 Apr 2021 09:08:44 GMT
+  recorded_at: Sun, 11 Apr 2021 10:20:29 GMT
 recorded_with: VCR 6.0.0
