@@ -1,24 +1,22 @@
 # README
+## Prerequisites
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Before starting, you need to have these things installed:
 
-Things you may want to cover:
+* Git
+* Homebrew for mac user
+* Ruby rbenv
 
-* Ruby version
+## Installation
 
-* System dependencies
+1. Pull repo
+2. Run `bundle install`
+3. Run `bundle exec rake db:reset`
+4. Use `.env.sample` content as your base `.env` file.
+5. Run Start server:`rails server` and `bundle exec sidekiq`
+6. Run Test-cases: `bundle exec rspec spec` and check test-cases coverage with `open index.html`
 
-* Configuration
 
-* Database creation
+Go to http://localhost:3000 and you'll see: "Yay! You’re on Rails!"
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![](http://i.giphy.com/vtVpHbnPi9TLa.gif)
