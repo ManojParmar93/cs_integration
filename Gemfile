@@ -57,6 +57,13 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'rspec-rails'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'database_cleaner'
+  gem 'shoulda-matchers'
+  gem 'simplecov', require: false
+  gem 'rspec-sidekiq'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

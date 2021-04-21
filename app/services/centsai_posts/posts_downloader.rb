@@ -5,16 +5,17 @@ module CentsaiPosts
   class PostsDownloader
     include ApplicationHelper
     CENTSAI_POSTS_URI = 'https://centsai.com/api/centsai-api.php'
+    attr_reader :articles, :channel_data
 
     def initialize(channel_data = {})
       articles = get_posts["posts"].select{|article| valid_item?(article['post_id'])}
       @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
-      @file_name = "post_#{Time.now.to_i}.rss"
+      @file_name = Rails.env.test? ? "centsai_post_test.rss" : "post_#{Time.now.to_i}.rss"
       @channel_data = {}
     end
 
     def call
-      {xml_rss_feed: xml_rss_feed, 
+      {xml_rss_feed: xml_rss_feed,
         are_items_present: @articles.present?,
         file_name: @file_name}
     end
