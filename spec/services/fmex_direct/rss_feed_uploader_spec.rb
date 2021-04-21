@@ -40,11 +40,9 @@ RSpec.describe FmexDirect::RssFeedUploader, type: :service do
     end
 
     it 'fmex direct items are present when it should return error message' do
-      VCR.use_cassette('fmex direct/are items present', match_requests_on: [:method, :uri]) do
-        response = FmexDirect::RssFeedUploader.new.call
-        expect(response).to eq("\n\n---No new articles available for Fmex Direct---\n\n")
-        expect(ArticleItem.present?).to be_truthy
-      end
+      response = FmexDirect::RssFeedUploader.new.call
+      expect(response).to eq("\n\n---No new articles available for Fmex Direct---\n\n")
+      expect(ArticleItem.present?).to be_truthy
     end
   end
 end

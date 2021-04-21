@@ -39,11 +39,9 @@ RSpec.describe NorthernTrust::RssFeedUploader, type: :service do
     end
 
     it 'northern trust of items are present when it should return error message' do
-      VCR.use_cassette('northern trust/are items present', match_requests_on: [:method, :uri]) do
-        response = NorthernTrust::RssFeedUploader.new.call
-        expect(response).to eq("\n\n---No new articles available for Northern Trust---\n\n")
-        expect(ArticleItem.present?).to be_truthy
-      end
+      response = NorthernTrust::RssFeedUploader.new.call
+      expect(response).to eq("\n\n---No new articles available for Northern Trust---\n\n")
+      expect(ArticleItem.present?).to be_truthy
     end
   end
 end
