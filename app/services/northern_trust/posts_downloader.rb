@@ -57,10 +57,10 @@ module NorthernTrust
       end
 
       def make_channel(channel)
-        channel.title @channel_data[:title]
-        channel.link @channel_data[:link]
-        channel.description @channel_data[:description]
-        channel.pubDate DateTime.now.utc.to_formatted_s(:rfc822) rescue ""
+        channel.title "Northerntrust"
+        channel.link "https://www.northerntrust.com​"
+        channel.description "Northerntrust Article Data"
+        channel.pubDate DateTime.now.utc.to_formatted_s(:rfc822)
         make_items(channel)
       end
 
@@ -73,25 +73,17 @@ module NorthernTrust
       end
 
       def make_item(item, article) # rubocop:disable MethodLength, AbcSize
-        item.guid "#{article[:url]}#{[:articleDate]}"
+        item.guid "#{article[:url]}#{article[:articleDate]}"
         item.title article[:title]
         item.pubDate Time.zone.parse(
-          article[:published_at].to_s
+          article[:articleDate].to_s
         ).to_formatted_s(:rfc822) rescue ""
-        item.linke "https://www.northerntrust.com​#{article[:url]}"
+        item.link article[:articleURL]
         item.description ActionView::Base.full_sanitizer.sanitize(article[:articleDescription])
         # http://www.lowter.com/blogs/2008/2/9/rss-dccreator-author
         item.dc(:creator) do |dc|
           dc.text! article[:author_name]
         end if article[:author_name].present?
-        item.description article[:post_content]
-        # Note that RSS 2.0 spec
-        # does not validate with HTTPS.
-        # These URLs are HTTPS from
-        # the Dow Jones API.
-        # https://github.com/rubys/feedvalidator/issues/16
-        # This is why enclosure was not used.
-        # FeedJira will pick this up.
         item.media(
           :content,
           url: article[:post_url],
