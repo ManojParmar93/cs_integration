@@ -293,6 +293,7 @@ DEPENDENCIES
   pry-byebug
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.5)
+  rails-html-sanitizer
   rspec-rails
   rspec-sidekiq
   rss
