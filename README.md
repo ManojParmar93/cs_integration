@@ -14,7 +14,7 @@ Before starting, you need to have these things installed:
 3. Run `bundle exec rake db:reset`
 4. Use `.env.sample` content as your base `.env` file.
 5. Run Start server:`rails server` and `bundle exec sidekiq`
-6. Run Test-cases: `bundle exec rspec spec` and check test-cases coverage with `open index.html`
+6. Run Test-cases: `bundle exec rspec spec` and check test-cases coverage with `open index.html`![](public/coverage.png)
 
 
 Go to http://localhost:3000 and you'll see: "Yay! You’re on Rails!"
