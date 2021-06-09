@@ -15,4 +15,5 @@ VCR.configure do |config|
   config.filter_sensitive_data('<<S3_BUCKET>>') { ENV['S3_BUCKET'] }
   config.filter_sensitive_data('<<USER_NAME>>') { ENV['USER_NAME'] }
   config.filter_sensitive_data('<<PASSWORD>>') { ENV['PASSWORD'] }
+  config.filter_sensitive_data('<<S3_BUCKET_REGION>>') { ENV['S3_BUCKET_REGION'] }
 end

@@ -10,7 +10,7 @@ RSpec.describe NonRssFeeds::CentsaiPosts::RssFeedUploader, type: :service do
   context '#centsai posts of rss feed uploader' do
     before do
       VCR.use_cassette('centsai posts/uploader call', match_requests_on: [:method, :uri]) do
-        @response = NonRssFeeds::CentsaiPosts::RssFeedUploader.new.call
+        @response = NonRssFeeds::CentsaiPosts::RssFeedUploader.new({file_name: 'centsai_post_test.rss'}).call
       end
     end
 
@@ -39,11 +39,9 @@ RSpec.describe NonRssFeeds::CentsaiPosts::RssFeedUploader, type: :service do
     end
 
     it 'centsai post items are present when it should return error message' do
-      VCR.use_cassette('centsai posts/are items present', match_requests_on: [:method, :uri]) do
-        response = NonRssFeeds::CentsaiPosts::RssFeedUploader.new.call
-        expect(response).to eq("\n\n---No new articles available for centsai---\n\n")
-        expect(ArticleItem.present?).to be_truthy
-      end
+      response = NonRssFeeds::CentsaiPosts::RssFeedUploader.new({file_name: 'centsai_post_test.rss'}).call
+      expect(response).to eq("\n\n---No new articles available for centsai---\n\n")
+      expect(ArticleItem.present?).to be_truthy
     end
   end
 end
