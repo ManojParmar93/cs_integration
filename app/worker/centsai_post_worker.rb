@@ -3,8 +3,8 @@ class CentsaiPostWorker
   sidekiq_options  :retry => 1
   
   def perform
-    CentsaiPosts::RssFeedUploader.new().call
-    FmexDirect::RssFeedUploader.new().call
-    NorthernTrust::RssFeedUploader.new().call
+    NonRssFeeds::CentsaiPosts::RssFeedUploader.new().call
+    NonRssFeeds::FmexDirect::RssFeedUploader.new().call
+    NonRssFeeds::NorthernTrust::RssFeedUploader.new().call
   end
 end

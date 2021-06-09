@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe FmexDirect::RssFeedUploader, type: :service do
+RSpec.describe NonRssFeeds::FmexDirect::RssFeedUploader, type: :service do
   let(:s3) { AWS::S3.new }
   let(:bucket) { s3.buckets[ENV['S3_BUCKET']].objects["fmax_direct/#{file_name}"] }
   let(:file_details) { FmexDirect::PostsDownloader.new().call }
@@ -11,7 +11,7 @@ RSpec.describe FmexDirect::RssFeedUploader, type: :service do
   context '#fmex direct of rss feed uploader' do
     before do
       VCR.use_cassette('fmex direct/uploader call', match_requests_on: [:method, :uri]) do
-        @response = FmexDirect::RssFeedUploader.new.call
+        @response = NonRssFeeds::FmexDirect::RssFeedUploader.new.call
       end
     end
 
@@ -41,7 +41,7 @@ RSpec.describe FmexDirect::RssFeedUploader, type: :service do
 
     it 'fmex direct items are present when it should return error message' do
       VCR.use_cassette('fmex direct/are items present', match_requests_on: [:method, :uri]) do
-        response = FmexDirect::RssFeedUploader.new.call
+        response = NonRssFeeds::FmexDirect::RssFeedUploader.new.call
         expect(response).to eq("\n\n---No new articles available for Fmex Direct---\n\n")
         expect(ArticleItem.present?).to be_truthy
       end

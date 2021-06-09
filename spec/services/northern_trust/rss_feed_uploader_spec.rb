@@ -1,16 +1,16 @@
 require 'rails_helper'
 
-RSpec.describe NorthernTrust::RssFeedUploader, type: :service do
+RSpec.describe NonRssFeeds::NorthernTrust::RssFeedUploader, type: :service do
   let(:s3) { AWS::S3.new }
   let(:bucket) { s3.buckets[ENV['S3_BUCKET']].objects["northerntrust/#{file_name}"] }
-  let(:file_content) { NorthernTrust::PostsDownloader.new().xml_rss_feed }
+  let(:file_content) { NonRssFeeds::NorthernTrust::PostsDownloader.new().xml_rss_feed }
   let(:file_name) { "northern_trust_test.rss" }
   let(:file_location) { "public/northerntrust/#{file_name}" }
 
   context '#northern trust of rss feed uploader' do
     before do
       VCR.use_cassette('northern trust/uploader call', match_requests_on: [:method, :uri]) do
-        @response = NorthernTrust::RssFeedUploader.new.call
+        @response = NonRssFeeds::NorthernTrust::RssFeedUploader.new.call
       end
     end
 
@@ -40,7 +40,7 @@ RSpec.describe NorthernTrust::RssFeedUploader, type: :service do
 
     it 'northern trust of items are present when it should return error message' do
       VCR.use_cassette('northern trust/are items present', match_requests_on: [:method, :uri]) do
-        response = NorthernTrust::RssFeedUploader.new.call
+        response = NonRssFeeds::NorthernTrust::RssFeedUploader.new.call
         expect(response).to eq("\n\n---No new articles available for Northern Trust---\n\n")
         expect(ArticleItem.present?).to be_truthy
       end
