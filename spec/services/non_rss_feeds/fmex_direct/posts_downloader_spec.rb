@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe FmexDirect::PostsDownloader, type: :service do
-  let(:fmex_direct_service) { FmexDirect::PostsDownloader.new }
+RSpec.describe NonRssFeeds::FmexDirect::PostsDownloader, type: :service do
+  let(:fmex_direct_service) { NonRssFeeds::FmexDirect::PostsDownloader.new }
 
   context '#fmex direct connection' do
     it 'should be check http connection with faraday cilent' do

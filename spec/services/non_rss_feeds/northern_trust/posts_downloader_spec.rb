@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe NorthernTrust::PostsDownloader, type: :service do
-  let(:northern_trust_service) { NorthernTrust::PostsDownloader.new }
+RSpec.describe NonRssFeeds::NorthernTrust::PostsDownloader, type: :service do
+  let(:northern_trust_service) { NonRssFeeds::NorthernTrust::PostsDownloader.new }
 
   context '#northern trust connection' do
     it 'should be check http connection with faraday cilent' do

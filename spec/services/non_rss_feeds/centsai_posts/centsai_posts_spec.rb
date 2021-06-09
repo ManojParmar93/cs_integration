@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe CentsaiPosts::PostsDownloader, type: :service do
-  let(:centsai_posts_service) { CentsaiPosts::PostsDownloader.new }
+RSpec.describe NonRssFeeds::CentsaiPosts::PostsDownloader, type: :service do
+  let(:centsai_posts_service) { NonRssFeeds::CentsaiPosts::PostsDownloader.new }
   let(:empty_centsai_posts) { centsai_posts_service.articles.clear }
 
   context '#centsai posts http connection' do
