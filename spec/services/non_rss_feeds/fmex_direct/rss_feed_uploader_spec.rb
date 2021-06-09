@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe NonRssFeeds::FmexDirect::RssFeedUploader, type: :service do
   let(:s3) { AWS::S3.new }
   let(:bucket) { s3.buckets[ENV['S3_BUCKET']].objects["fmax_direct/#{file_name}"] }
-  let(:file_details) { FmexDirect::PostsDownloader.new().call }
+  let(:file_details) { NonRssFeeds::FmexDirect::PostsDownloader.new().call }
   let(:file_content) { file_details[:xml_rss_feed] }
   let(:file_name) { file_details[:file_name] }
   let(:file_location) { "public/fmax_direct/#{file_name}" }
