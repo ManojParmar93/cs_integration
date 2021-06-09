@@ -8,11 +8,11 @@ module NonRssFeeds
       VALID_FILE_NAME_CHARACTERS = %w[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z]
       attr_reader :articles, :author_details, :channel_data, :file_name, :published_at
 
-      def initialize
+      def initialize(options = {})
         post_response = get_posts
         @author_details = post_response['content_author']
         @published_at = Time.zone.parse(post_response['content_date_updated']) rescue Time.now
-        @file_name = "#{post_response['content_title'].downcase.split('').select{|char| char == ' ' || VALID_FILE_NAME_CHARACTERS.include?(char)}.join('').gsub(' ', '_')}.rss"
+        @file_name = options[:file_name] || "#{post_response['content_title'].downcase.split('').select{|char| char == ' ' || VALID_FILE_NAME_CHARACTERS.include?(char)}.join('').gsub(' ', '_')}.rss"
         articles = post_response['content_section']['section_categories'].select do |article|
           valid_item?(article['category_id'])
         end

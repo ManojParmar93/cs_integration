@@ -7,14 +7,14 @@ module NonRssFeeds
       NORTHERNTRUST_POSTS_URI = "https://www.northerntrust.com/api/gridSearch?&query=*&filterString=%5b%7B%22name%22%3A%22publications%22%2C%22values%22%3A%5B%22*%22%5D%7D%5d&region=united-states&start=1&pageSize=9"
       attr_reader :articles, :channel_data
 
-      def initialize
+      def initialize(options = {})
         articles = get_posts['results'].select do |article|
           valid_item? "#{article['url']}#{['articleDate']}"
         end
         @articles = articles.collect do |article|
           HashWithIndifferentAccess.new(article)
         end
-        @file_name = Rails.env.test? ? "northern_trust_test.rss" : "post_#{Time.now.to_i}.rss"
+        @file_name = options[:file_name] || "post_#{Time.now.to_i}.rss"
         @channel_data = {}
       end
 

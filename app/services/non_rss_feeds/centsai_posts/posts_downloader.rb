@@ -8,10 +8,10 @@ module NonRssFeeds
       CENTSAI_POSTS_URI = 'https://centsai.com/api/centsai-api.php'
       attr_reader :articles, :channel_data
 
-      def initialize(channel_data = {})
+      def initialize(channel_data = {}, options = {})
         articles = get_posts["posts"].select{|article| valid_item?(article['post_id'])}
         @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
-        @file_name = Rails.env.test? ? "centsai_post_test.rss" : "post_#{Time.now.to_i}.rss"
+        @file_name = options[:file_name] || "post_#{Time.now.to_i}.rss"
         @channel_data = {}
       end
 

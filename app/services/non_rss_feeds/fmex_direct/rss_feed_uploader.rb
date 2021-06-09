@@ -1,11 +1,12 @@
 module NonRssFeeds
   module FmexDirect
     class RssFeedUploader
-      def initialize
+      def initialize(options = {})
+        @file_name = options[:file_name]
       end
 
       def call
-        file_details = FmexDirect::PostsDownloader.new().call
+        file_details = NonRssFeeds::FmexDirect::PostsDownloader.new({file_name: @file_name}).call
 
         unless file_details[:are_items_present]
           fmexdirect_error_massage = "\n\n---No new articles available for Fmex Direct---\n\n"
