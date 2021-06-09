@@ -25,7 +25,7 @@ module NorthernTrust
       )
 
       File.delete(file_location)
-      uploaded_file = "https://#{ENV['S3_BUCKET']}.s3.ap-south-1.amazonaws.com/northerntrust/#{file_name}"
+      uploaded_file = "https://#{ENV['S3_BUCKET']}.s3.#{ENV['AWS_REGION']}.amazonaws.com/northerntrust/#{file_name}"
       return uploaded_file
     end
   end

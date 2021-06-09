@@ -61,7 +61,7 @@ http_interactions:
   recorded_at: Sun, 11 Apr 2021 10:21:03 GMT
 - request:
     method: put
-    uri: https://<<S3_BUCKET>>.s3.ap-south-1.amazonaws.com/northerntrust/northern_trust_test.rss
+    uri: https://<<S3_BUCKET>>.s3.<<S3_BUCKET_REGION>>.amazonaws.com/northerntrust/northern_trust_test.rss
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -80,13 +80,13 @@ http_interactions:
       Expect:
       - 100-continue
       Host:
-      - "<<S3_BUCKET>>.s3.ap-south-1.amazonaws.com"
+      - "<<S3_BUCKET>>.s3.<<S3_BUCKET_REGION>>.amazonaws.com"
       X-Amz-Date:
       - 20210411T102103Z
       X-Amz-Content-Sha256:
       - d92d654d20f7dd40cb738e5fd66ef2a39d9e521457c41124d14be619ad92ff16
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=<<AWS_ACCESS_KEY_ID>>/20210411/ap-south-1/s3/aws4_request,
+      - AWS4-HMAC-SHA256 Credential=<<AWS_ACCESS_KEY_ID>>/20210411/<<S3_BUCKET_REGION>>/s3/aws4_request,
         SignedHeaders=content-length;expect;host;user-agent;x-amz-acl;x-amz-content-sha256;x-amz-date,
         Signature=feeed1d52d2dfbaff312744a9f0c694135a2e07c668f16493d047a683fa71129
       Accept:

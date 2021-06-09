@@ -20,7 +20,7 @@ module CentsaiPosts
         file: file_location,
         acl: :public_read
       )
-      uploaded_file = "https://#{ENV['S3_BUCKET']}.s3.ap-south-1.amazonaws.com/centsai/#{file_name}"
+      uploaded_file = "https://#{ENV['S3_BUCKET']}.s3.#{ENV['AWS_REGION']}.amazonaws.com/centsai/#{file_name}"
       return uploaded_file
       # File.delete(file_location)
     end

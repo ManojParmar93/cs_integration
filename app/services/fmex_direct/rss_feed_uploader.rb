@@ -25,7 +25,7 @@ module FmexDirect
       )
 
       File.delete(file_location)
-      uploaded_file = "https://#{ENV['S3_BUCKET']}.s3.ap-south-1.amazonaws.com/fmax_direct/#{file_name}"
+      uploaded_file = "https://#{ENV['S3_BUCKET']}.s3.#{ENV['AWS_REGION']}.amazonaws.com/fmax_direct/#{file_name}"
       return uploaded_file
     end
   end
