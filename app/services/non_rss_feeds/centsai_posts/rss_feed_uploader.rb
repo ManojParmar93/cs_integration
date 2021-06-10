@@ -3,10 +3,11 @@ module NonRssFeeds
     class RssFeedUploader
       def initialize(options = {})
         @file_name = options[:file_name]
+        @url_query = options[:url_query]
       end
 
       def call
-        centsai_details = NonRssFeeds::CentsaiPosts::PostsDownloader.new({}, {file_name: @file_name}).call
+        centsai_details = NonRssFeeds::CentsaiPosts::PostsDownloader.new({}, {file_name: @file_name, url_query: @url_query).call
         unless centsai_details[:are_items_present]
           centsai_error_massage = "\n\n---No new articles available for centsai---\n\n"
           return centsai_error_massage

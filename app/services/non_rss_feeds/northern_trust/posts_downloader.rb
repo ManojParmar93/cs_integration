@@ -8,6 +8,7 @@ module NonRssFeeds
       attr_reader :articles, :channel_data
 
       def initialize(options = {})
+        @url_query = options[:url_query]
         articles = get_posts['results'].select do |article|
           valid_item? "#{article['url']}#{['articleDate']}"
         end
@@ -37,10 +38,15 @@ module NonRssFeeds
       def http_connection
         Faraday.new(options = {headers: {user_agent: 'Mozilla/5.0',
             Accept: '*/*', Connection: 'keep-alive'},
-            url: NORTHERNTRUST_POSTS_URI})
+            url: northerntrust_post_url})
       end
 
       private
+
+        def northerntrust_post_url
+          return NORTHERNTRUST_POSTS_URI if @url_query.blank?
+          "https://www.northerntrust.com/api/gridSearch?#{@url_query}"
+        end
 
         def make_feed
           xml = Builder::XmlMarkup.new
