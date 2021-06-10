@@ -9,6 +9,7 @@ module NonRssFeeds
       attr_reader :articles, :author_details, :channel_data, :file_name, :published_at
 
       def initialize(options = {})
+        @url_query = options[:url_query]
         post_response = get_posts
         @author_details = post_response['content_author']
         @published_at = Time.zone.parse(post_response['content_date_updated']) rescue Time.now
@@ -39,10 +40,15 @@ module NonRssFeeds
       end
 
       def http_connection
-        Faraday.new(url: FMEX_DIRECT_POSTS_URI)
+        Faraday.new(url: fmex_direct_posts_url)
       end
 
       private
+
+        def fmex_direct_posts_url
+          return FMEX_DIRECT_POSTS_URI if @url_query.blank?
+          "https://app.fmexdirect.com/api/v1/content?#{@url_query}"
+        end
 
         def make_feed
           xml = Builder::XmlMarkup.new

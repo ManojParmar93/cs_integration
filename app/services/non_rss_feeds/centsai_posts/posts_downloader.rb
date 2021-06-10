@@ -9,6 +9,7 @@ module NonRssFeeds
       attr_reader :articles, :channel_data
 
       def initialize(channel_data = {}, options = {})
+        @url_query = options[:url_query]
         articles = get_posts["posts"].select{|article| valid_item?(article['post_id'])}
         @articles = articles.collect{|article| HashWithIndifferentAccess.new(article)}
         @file_name = options[:file_name] || "post_#{Time.now.to_i}.rss"
@@ -32,12 +33,17 @@ module NonRssFeeds
       end
 
       def http_connection
-        conn = Faraday.new(url: CENTSAI_POSTS_URI)
+        conn = Faraday.new(url: centsai_post_url)
         conn.basic_auth(ENV['USER_NAME'], ENV['PASSWORD'])
         conn
       end
 
       private
+        def centsai_post_url
+          return CENTSAI_POSTS_URI if @url_query.blank?
+          "https://centsai.com/api/centsai-api.php?#{@url_query}"
+        end
+
         def make_feed
           xml = Builder::XmlMarkup.new
           xml.instruct!(:xml, version: '1.0', encoding: 'UTF-8')

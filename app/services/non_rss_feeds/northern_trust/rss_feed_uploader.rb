@@ -3,10 +3,11 @@ module NonRssFeeds
     class RssFeedUploader
       def initialize(options = {})
         @file_name = options[:file_name]
+        @url_query = options[:url_query]
       end
 
       def call
-        file_details = NonRssFeeds::NorthernTrust::PostsDownloader.new({file_name: @file_name}).call
+        file_details = NonRssFeeds::NorthernTrust::PostsDownloader.new({file_name: @file_name, url_query: @url_query}).call
 
         unless file_details[:are_items_present]
           northerntrust_error_massage = "\n\n---No new articles available for Northern Trust---\n\n"
