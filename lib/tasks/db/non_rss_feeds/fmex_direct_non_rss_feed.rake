@@ -11,7 +11,8 @@ namespace :db do
       file_path = args.file_path
       [
         ['bucket_name', bucket_name],
-        ['file_path', file_path]
+        ['file_path', file_path],
+        ['url_query', url_query]
       ].each do |k, v|
       raise "#{k} missing." if v.blank?
     end
