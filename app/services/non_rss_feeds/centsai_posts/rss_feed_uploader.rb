@@ -7,7 +7,7 @@ module NonRssFeeds
       end
 
       def call
-        centsai_details = NonRssFeeds::CentsaiPosts::PostsDownloader.new({}, {file_name: @file_name, url_query: @url_query).call
+        centsai_details = NonRssFeeds::CentsaiPosts::PostsDownloader.new({}, {file_name: @file_name, url_query: @url_query}).call
         unless centsai_details[:are_items_present]
           centsai_error_massage = "\n\n---No new articles available for centsai---\n\n"
           return centsai_error_massage
