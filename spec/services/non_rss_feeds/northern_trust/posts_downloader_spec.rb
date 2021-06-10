@@ -73,11 +73,12 @@ RSpec.describe NonRssFeeds::NorthernTrust::PostsDownloader, type: :service do
     end
 
     it 'should vaildate xml channel of item data' do
+      @rss_feed_data.dig("channel", "item")
       item_details = @rss_feed_data.dig("channel", "item")
       expect(item_details.present?).to eq(item_details.is_a?(Array))
-      expect(item_details.first.keys.map(&:to_sym)).to include(
-        :guid, :title, :linke, :description, :encoded
-      )
+      %i[guid title link description encoded].each do |key|
+        expect(item_details.first.keys.map(&:to_sym)).to include(key)
+      end
     end
   end
 end
