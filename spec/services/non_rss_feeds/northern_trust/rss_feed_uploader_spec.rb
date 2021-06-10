@@ -9,8 +9,9 @@ RSpec.describe NonRssFeeds::NorthernTrust::RssFeedUploader, type: :service do
 
   context '#northern trust of rss feed uploader' do
     before do
+      ArticleItem.destroy_all
       VCR.use_cassette('northern trust/uploader call', match_requests_on: [:method, :uri]) do
-        @response = NonRssFeeds::NorthernTrust::RssFeedUploader.new.call
+        @response = NonRssFeeds::NorthernTrust::RssFeedUploader.new(file_name: 'northern_trust_test.rss').call
       end
     end
 
@@ -40,7 +41,7 @@ RSpec.describe NonRssFeeds::NorthernTrust::RssFeedUploader, type: :service do
 
     it 'northern trust of items are present when it should return error message' do
       VCR.use_cassette('northern trust/are items present', match_requests_on: [:method, :uri]) do
-        response = NonRssFeeds::NorthernTrust::RssFeedUploader.new.call
+        response = NonRssFeeds::NorthernTrust::RssFeedUploader.new({file_name: 'northern_trust_test.rss'}).call
         expect(response).to eq("\n\n---No new articles available for Northern Trust---\n\n")
         expect(ArticleItem.present?).to be_truthy
       end

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe NonRssFeeds::NorthernTrust::PostsDownloader, type: :service do
-  let(:northern_trust_service) { NonRssFeeds::NorthernTrust::PostsDownloader.new }
+  let(:northern_trust_service) { NonRssFeeds::NorthernTrust::PostsDownloader.new({file_name: 'northern_trust_test.rss'}) }
 
   context '#northern trust connection' do
     it 'should be check http connection with faraday cilent' do
@@ -16,6 +16,7 @@ RSpec.describe NonRssFeeds::NorthernTrust::PostsDownloader, type: :service do
 
   context '#northern trust initialize data and vaildate' do
     before do
+      ArticleItem.destroy_all
       VCR.use_cassette 'northern trust/posts downloader' do
         expect {
           @articles = northern_trust_service.articles
@@ -49,9 +50,10 @@ RSpec.describe NonRssFeeds::NorthernTrust::PostsDownloader, type: :service do
 
   context '#northern trust for make feed' do
     before do
+      ArticleItem.northern_trust.destroy_all
       VCR.use_cassette 'northern trust/xml rss feed' do
-        xml_rss_feed = Hash.from_xml(northern_trust_service.send(:make_feed))
-        @rss_feed_data = xml_rss_feed["rss"]
+        @xml_rss_feed = Hash.from_xml(northern_trust_service.send(:make_feed))
+        @rss_feed_data = @xml_rss_feed["rss"]
       end
     end
 
