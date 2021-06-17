@@ -1,4 +1,4 @@
-require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe NonRssFeeds::NorthernTrust::PostsDownloader, type: :service do
   let(:northern_trust_service) { NonRssFeeds::NorthernTrust::PostsDownloader.new({file_name: 'northern_trust_test.rss'}) }
@@ -25,7 +25,7 @@ RSpec.describe NonRssFeeds::NorthernTrust::PostsDownloader, type: :service do
     end
 
     it 'should be vaildate northern trust of article_item source and scope' do
-      expect(ArticleItem.northern_trust.first.source).to include ("northern_trust")
+      expect(ArticleItem.northern_trust.first.source).to eq(ArticleItem::NORTHERN_TRUST_ITEM)
       expect(ArticleItem.first.guid).not_to be_nil
       expect(ArticleItem.northern_trust.pluck(:guid).uniq).to eq(ArticleItem.northern_trust.pluck(:guid))
     end

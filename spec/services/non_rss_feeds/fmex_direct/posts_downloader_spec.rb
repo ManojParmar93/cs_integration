@@ -1,4 +1,4 @@
-require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe NonRssFeeds::FmexDirect::PostsDownloader, type: :service do
   let(:fmex_direct_service) { NonRssFeeds::FmexDirect::PostsDownloader.new }
@@ -16,6 +16,7 @@ RSpec.describe NonRssFeeds::FmexDirect::PostsDownloader, type: :service do
 
   context '#fmex direct initialize data and vaildate' do
     before do
+      ArticleItem.destroy_all
       VCR.use_cassette 'fmex direct/posts downloader' do
         expect {
           get_posts = fmex_direct_service.http_connection.get()
@@ -25,7 +26,7 @@ RSpec.describe NonRssFeeds::FmexDirect::PostsDownloader, type: :service do
     end
 
     it 'should be vaildate fmex direct article_item source and scope' do
-      expect(ArticleItem.fmex_direct.first.source).to include ("fmex_direct")
+      expect(ArticleItem.fmex_direct.first.source).to eq(ArticleItem::FMEX_ITEM)
       expect(ArticleItem.first.guid).not_to be_nil
       expect(ArticleItem.fmex_direct.pluck(:guid).uniq).to eq(ArticleItem.fmex_direct.pluck(:guid))
     end

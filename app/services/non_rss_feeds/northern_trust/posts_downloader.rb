@@ -118,7 +118,7 @@ module NonRssFeeds
         end
 
         def valid_item?(guid)
-          return false if ArticleItem.northern_trust.find_by(guid: guid)
+          return false if ArticleItem.northern_trust.where(guid: guid).exists?
           ArticleItem.northern_trust.create(guid: guid)
         end
     end

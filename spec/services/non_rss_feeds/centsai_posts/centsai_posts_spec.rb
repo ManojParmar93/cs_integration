@@ -1,4 +1,4 @@
-require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe NonRssFeeds::CentsaiPosts::PostsDownloader, type: :service do
   let(:centsai_posts_service) { NonRssFeeds::CentsaiPosts::PostsDownloader.new }
@@ -18,6 +18,7 @@ RSpec.describe NonRssFeeds::CentsaiPosts::PostsDownloader, type: :service do
 
   context '#centsai posts initialize data and vaildate' do
     before do
+      ArticleItem.destroy_all
       VCR.use_cassette 'centsai posts/posts downloader' do
         expect {
           centsai_posts_service
@@ -26,7 +27,7 @@ RSpec.describe NonRssFeeds::CentsaiPosts::PostsDownloader, type: :service do
     end
 
     it 'should be vaildate centsai article_item source and scope' do
-      expect(ArticleItem.centsai.first.source).to include ("centsai")
+      expect(ArticleItem.centsai.first.source).to eq(ArticleItem::CENTSAI_ITEM)
       expect(ArticleItem.first.guid).not_to be_nil
       expect(ArticleItem.centsai.pluck(:guid).uniq).to eq(ArticleItem.centsai.pluck(:guid))
     end

@@ -18,17 +18,26 @@ module NonRssFeeds
         file_content = file_details[:xml_rss_feed]
         file_name = file_details[:file_name]
         file_location = "public/northerntrust/#{file_name}"
-        File.open(file_location, 'a+') {|f| f.write(file_content) }
 
-        bucket = S3_BUCKET.objects["northerntrust/#{file_name}"]
-
-        bucket.write(
-          file: file_location,
-          acl: :public_read
+        s3 ||= AWS::S3.new(
+          access_key_id: S3::Config.config['access_key_id'],
+          secret_access_key: S3::Config.config['secret_access_key']
         )
 
-        File.delete(file_location)
-        uploaded_file = "https://#{ENV['S3_BUCKET']}.s3.#{ENV['AWS_REGION']}.amazonaws.com/northerntrust/#{file_name}"
+
+        bucket = s3.buckets[S3::Config.config['bucket_name']]
+
+        object = bucket.objects["northerntrust/#{file_name}"]
+
+
+        object.write(
+          file_content,
+          acl: :public_read,
+          content_type: 'text/xml' 
+        )
+
+
+        uploaded_file = "https://#{S3::Config.config['bucket_name']}.s3.#{S3::Config.config['region']}.amazonaws.com/northerntrust/#{file_name}"
         return uploaded_file
       end
     end

@@ -124,7 +124,7 @@ module NonRssFeeds
         end
 
         def valid_item?(guid)
-          return false if ArticleItem.fmex_direct.find_by(guid: guid)
+          return false if ArticleItem.fmex_direct.where(guid: guid).exists?
           ArticleItem.fmex_direct.create(guid: guid)
         end
     end

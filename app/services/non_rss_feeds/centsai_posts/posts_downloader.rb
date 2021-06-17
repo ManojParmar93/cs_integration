@@ -113,7 +113,7 @@ module NonRssFeeds
         end
 
         def valid_item?(guid)
-          return false if ArticleItem.centsai.find_by(guid: guid)
+          return false if ArticleItem.centsai.where(guid: guid).exists?
           ArticleItem.centsai.create(guid: guid)
         end
     end
